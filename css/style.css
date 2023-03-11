@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import './utilities/tipography/tipography.css';
+@import './utilities/color/color.css';
+@import './utilities/utilities.css';
+@import './utilities/page.css';
+@import './utilities/responsive.css';
+
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  color: var(--color-b);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: var(--color-b);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img[src$=".jpeg"],
+img[src$=".svg"] {
+  max-width: max-content;
+  width: 100%;
+  height: auto;
+}

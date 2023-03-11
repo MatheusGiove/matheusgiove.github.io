@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600;700&family=Roboto:wght@400;500&display=swap");
+
+.upper {
+  text-transform: uppercase;
+}
+
+.captalize {
+  text-transform: capitalize;
+}
+
+.text-name-home {
+  font: 700 5.5vw/1.125 "Fira Code", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.text-name-sub {
+  font: 600 2.75vw/1.25 "Fira Code", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.text-about {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.text-subtitle {
+  font: 700 2rem/1.25 "Fira Code", sans-serif;
+}
+
+.text-title {
+  font: 700 8rem/1.25 "Fira Code", sans-serif;
+}
+
+.text-subtitle-p {
+  font: 500 1rem/1.5 "Roboto", sans-serif;
+}
+
+.text-subtitle-b {
+  font: 700 1rem/1.5 "Roboto", sans-serif;
+}
+
+.text-2-m {
+  font: 500 1.25rem/1.2 "Roboto", sans-serif;
+}
+
+.text-2 {
+  font: 400 1.25rem/1.2 "Roboto", sans-serif;
+}
+
+.text-paste-grad {
+  font: 400 1.25rem/1.2 "Roboto", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .text-name-home {
+    font-size: 2.5rem;
+  }
+
+  .text-title {
+    font-size: 4rem;
+  }
+
+  .text-name-sub {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-name-home {
+    font-size: 2rem;
+  }
+
+  .text-name-sub {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .text-name-home {
+    font-size: 1.6rem;
+  }
+
+  .text-name-sub {
+    font-size: 1rem;
+  }
+
+  .text-title {
+    font-size: 3rem;
+  }
+
+  .competence-items {
+    font-size: .75rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .text-about {
+    font-size: 1.25rem;
+  }
+}
