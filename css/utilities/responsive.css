@@ -95,4 +95,14 @@
   .header-content {
     gap: 10px;
   }
+
+  .paste-items::after,
+  .paste-items::before {
+    height: 60px;
+    height: 60px;
+  }
+  
+  .paste-items::before{
+    bottom: 80px;
+  }
 }
