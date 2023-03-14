@@ -18,7 +18,7 @@
   letter-spacing: 0.1em;
 }
 
-.text-about {
+.text-1 {
   font: 400 1rem/1.5 "Roboto", sans-serif;
 }
 
@@ -28,6 +28,10 @@
 
 .text-title {
   font: 700 8rem/1.25 "Fira Code", sans-serif;
+}
+
+.text-title-2 {
+  font: 700 4rem/1.12 "Fira Code", sans-serif;
 }
 
 .text-subtitle-p {
@@ -83,12 +87,13 @@
     font-size: 1rem;
   }
 
-  .text-title {
+  .text-title,
+  .text-title-2 {
     font-size: 3rem;
   }
 
   .competence-items {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 }
 

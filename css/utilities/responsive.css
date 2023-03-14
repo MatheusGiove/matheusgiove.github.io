@@ -24,11 +24,21 @@
   .intro-content span {
     margin-bottom: 80px;
   }
+
+  .contact-info,
+  .contact-contact {
+    padding: 40px 20px;
+  }
 }
 
 /* 800 pixels */
 
 @media (max-width: 800px) {
+  .padding-page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
   .intro-content img {
     width: 82px;
   }
@@ -43,11 +53,6 @@
 
   .intro-content span {
     margin-bottom: 60px;
-  }
-
-  .profile {
-    padding-top: 0px;
-    padding-bottom: 60px;
   }
 
   .profile-content {
@@ -79,6 +84,42 @@
     word-break: initial;
     justify-self: center;
   }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-content {
+    grid-row: initial;
+  }
+
+  .projects > h2 {
+    grid-column: initial;
+    word-break: normal;
+    max-width: initial;
+    text-align: center;
+  }
+
+  .projects-content {
+    padding: 0px;
+  }
+  
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-contact {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .contact-info {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .contact-info,
+  .contact-contact {
+    padding: 40px 30px;
+  }
 }
 
 /* 600 pixels */
@@ -87,11 +128,33 @@
   .intro-content span {
     margin-bottom: 40px;
   }
+
+  .skills-list li > img {
+    width: 96px;  
+  }
+
+  .padding-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .col-2 {
+    grid-column: initial;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* 440 pixels */
 
 @media (max-width: 440px) {
+  .padding-page {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
   .header-content {
     gap: 10px;
   }
@@ -104,5 +167,13 @@
   
   .paste-items::before{
     bottom: 80px;
+  }
+
+  .graduate-paste-grad {
+    gap: 30px;
+  }
+
+  .skills-list li > img {
+    width: 64px;  
   }
 }

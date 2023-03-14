@@ -12,11 +12,11 @@
   --color-10: #2e2e2e;
   --color-11: #111111;
   --color-b: #000000;
-  --color-p1: #0909EA;
-  --color-p2: #0E17FD;
-  --color-p3: #2F37FF;
-  --color-p4: #3F80FF;
-  --color-p5: #4EAEFF;
+  --color-p1: #0909ea;
+  --color-p2: #0e17fd;
+  --color-p3: #2f37ff;
+  --color-p4: #3f80ff;
+  --color-p5: #4eaeff;
 }
 
 .color-w {
@@ -76,7 +76,7 @@
 }
 
 .color-p2 {
-  color: var(--color-p2); 
+  color: var(--color-p2);
 }
 
 .color-p3 {
@@ -89,4 +89,28 @@
 
 .color-p5 {
   color: var(--color-p5);
+}
+
+.color-title {
+  background: linear-gradient(var(--color-p1), var(--color-p4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.color-title2 {
+  background: linear-gradient(var(--color-p4), var(--color-p1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.color-subtitle {
+  background: linear-gradient(var(--color-p5), var(--color-p3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
