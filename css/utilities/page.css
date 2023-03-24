@@ -118,6 +118,7 @@
 
 .paste-items {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   flex: 1;
   padding: 20px;
@@ -126,14 +127,14 @@
   box-shadow: -5px 5px 0 var(--color-p4);
 }
 
-.paste-items h2 {
+.paste-items > h2 {
   margin-bottom: 12px;
   display: grid;
 }
 
-.paste-items h1 {
-  margin-bottom: 40px;
+.paste-items > h1 {
   flex: 1;
+  margin-bottom: 20px;
 }
 
 .paste-items::after {
