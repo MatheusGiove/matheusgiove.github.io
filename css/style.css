@@ -4,6 +4,13 @@
 @import './utilities/color/color.css';
 @import './utilities/utilities.css';
 @import './utilities/page.css';
+@import './pages/home.css';
+@import './pages/profile.css';
+@import './pages/graduate.css';
+@import './pages/skills.css';
+@import './pages/projects.css';
+@import './pages/contact.css';
+@import './pages/footer.css';
 @import './utilities/responsive.css';
 
 * {

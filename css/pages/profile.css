@@ -1,0 +1,47 @@
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.profile-content picture > img {
+  max-width: 256px;
+  border-radius: 50%;
+}
+
+.profile-content picture {
+  place-self: center;
+}
+
+.profile-content > h2 {
+  grid-column: 2;
+  justify-self: center;
+}
+
+.profile-text p + p {
+  margin-top: 32px;
+}
+
+.profile-text {
+  position: relative;
+}
+
+.profile-content .profile-text::before {
+  content: "“";
+  top: -40px;
+  left: -40px;
+}
+
+.profile-content .profile-text::after {
+  content: "”";
+  right: 0px;
+  bottom: -80px;
+}
+
+.profile-content .profile-text::after,
+.profile-content .profile-text::before {
+  /* font-style: italic; */
+  font-size: 5rem;
+  position: absolute;
+  color: var(--color-p4);
+}

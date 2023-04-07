@@ -1,0 +1,12 @@
+.skills-content {
+  display: grid;
+  justify-items: center;
+  gap: 60px; 
+}
+
+.skills-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}

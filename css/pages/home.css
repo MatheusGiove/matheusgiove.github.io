@@ -1,0 +1,43 @@
+.intro {
+  background: linear-gradient(var(--color-w) 20%, var(--color-p5) 95%);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro-content {
+  display: grid;
+  justify-items: center;
+}
+
+.intro-content picture {
+  margin-bottom: 16px;
+}
+
+.intro-content span {
+  margin-top: 4px;
+  margin-bottom: 120px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+.header-content a > img {
+  background-color: var(--color-p4);
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--color-p1);
+}
+
+.header-content a:hover > img {
+  background-color: aqua;
+  transition: 0.2s;
+}
