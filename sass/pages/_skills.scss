@@ -1,0 +1,114 @@
+.c-skills {
+  font: 600 1rem/1 "Roboto", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.08rem;
+  position: relative;
+  padding: 60px calc((100% - 1440px) / 2);
+  &::after {
+    @include bg-1-r;
+  }
+  &::before {
+    @include bg-1-l;
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    font: 700 2rem/1.33 "Roboto", Helvetica, Arial, sans-serif;
+    color: $primary-3;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin-bottom: 44px;
+    position: relative;
+    &::after {
+      content: "";
+      width: 50px;
+      height: 5px;
+      bottom: -20px;
+      background: $primary-3;
+      position: absolute;
+    }
+    &::before {
+      content: "";
+      width: 150px;
+      height: 1px;
+      bottom: -18px;
+      background: var(--b2);
+      position: absolute;
+    }
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    gap: 12px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    @include d(s) {
+      display: none;
+    }
+  }
+  &__switcher {
+    display: flex;
+    align-items: center;
+    width: 55px;
+    height: 25px;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #888;
+  }
+  &__button {
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: $secundary-5;
+  }
+  &__switcher--active {
+    justify-content: end;
+    background: $primary-3;
+    transition: 0.3s;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1 1 200px;
+    flex-grow: 200px;
+    height: 200px;
+    padding: 30px;
+    box-shadow: 5px 10px 20px rgba(#000000, 0.1);
+    background: var(--w2);
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    &:hover .c-skills__content {
+      transform: translateY(0px);
+      transform: translateZ(50px);
+      opacity: 1;
+    }
+  }
+  &__content {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+    h3 {
+      margin-top: 8px;
+    }
+    &--active {
+      opacity: 1;
+      transform: none;
+    }
+    @include d(s) {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

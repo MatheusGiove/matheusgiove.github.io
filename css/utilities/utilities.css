@@ -15,13 +15,13 @@
   color: transparent;
 }
 
-.padding-page {
+.u-padding__page {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .bg-1 {
-  background: linear-gradient(var(--color-w)10%, var(--color-p5) 90%);
+  background: linear-gradient(var(--color-w) 10%, var(--color-p5) 90%);
 }
 
 .bg-2 {
@@ -94,17 +94,4 @@ strong {
 ::-webkit-scrollbar-thumb {
   background: var(--color-p1);
   border-radius: 25px;
-}
-
-@media (max-width: 600px) {
-  .competence-items {
-      padding: 10px;
-  }
-}
-
-@media (max-width: 440px) {
-  .competence-items {
-      font-size: .75rem;
-      padding: 6px;
-  }
 }

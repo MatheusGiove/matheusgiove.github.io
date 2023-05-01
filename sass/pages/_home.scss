@@ -1,0 +1,212 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 40px;
+  position: fixed;
+  width: calc(100% - 80px);
+  background: var(--w1);
+  box-shadow: 0 2px 10px rgba(#000, 0.05);
+  z-index: 999;
+  @include d(s) {
+    padding-left: 12px;
+    padding-top: 12px;
+    width: calc(100% - 52px);
+  }
+  .c-brand {
+    display: flex;
+  }
+  .c-menu {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    &.is-active > .c-list-menu {
+      @include d(s) {
+        visibility: visible;
+        width: 260px;
+        left: 0px;
+      }
+    }
+    &__button {
+      display: none;
+      @include d(s) {
+        display: flex;
+        background: $primary-5;
+        padding: 10px;
+        border-radius: 50%;
+        border: none;
+        place-self: center;
+        position: fixed;
+        cursor: pointer;
+        top: 8px;
+        right: 12px;
+        z-index: 2;
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.2s;
+        }
+      }
+    }
+    .c-list-menu {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+      @include d(s) {
+        position: fixed;
+        display: grid;
+        align-content: center;
+        visibility: hidden;
+        background: var(--w2);
+        width: 0;
+        height: 100vh;
+        top: 0;
+        left: -200px;
+        z-index: 1;
+        transition: 0.7s ease-in-out;
+        overflow: hidden;
+      }
+    }
+    .c-link > a {
+      font: 500 1rem/1 Roboto, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      padding: 6px 0;
+      border-radius: 5px;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background: linear-gradient(135deg, $primary-4, $primary-3);
+        position: absolute;
+      }
+      &:hover {
+        transition: 0.3s;
+        background-image: linear-gradient(135deg, $primary-4, $primary-3);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        &::after {
+          transition: 0.3s;
+          width: 100%;
+        }
+      }
+      @include d(s) {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 20px;
+        background: var(--w1);
+        &:hover {
+          color: var(--w1);
+          background: linear-gradient(135deg, $primary-4, $primary-3);
+          transform: scale(1.4);
+        }
+        &::after {
+          display: none;
+        }
+      }
+      @include d(fh) {
+        font-size: 1.125rem;
+      }
+    }
+  }
+  #u-appearenceButton {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    --size-of-icon: 1.4em;
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      &:checked + .c-slider {
+        background-color: #303136;
+      }
+      &:checked + .c-slider:before {
+        left: calc(
+          100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em))
+        );
+        background: #303136;
+        box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+      }
+    }
+    @include d(s) {
+      margin-right: 40px;
+    }
+    .c-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $primary-5;
+      transition: 0.4s;
+      border-radius: 30px;
+      &:before {
+        position: absolute;
+        content: "";
+        height: var(--size-of-icon, 1.4em);
+        width: var(--size-of-icon, 1.4em);
+        border-radius: 20px;
+        left: var(--slider-offset, 0.3em);
+        top: 50%;
+        transform: translateY(-50%);
+        background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+        transition: 0.4s;
+      }
+    }
+  }
+}
+.c-introduction {
+  display: grid;
+  align-content: center;
+  text-align: center;
+  color: var(--b1);
+  height: 100vh;
+  position: relative;
+  &::after {
+    @include bg-1-r;
+  }
+  &::before {
+    @include bg-1-l;
+  }
+  &__title {
+    font: 700 4rem/1.12 "Fira Code", Roboto, Helvetica, sans-serif;
+    @include d(s) {
+      font-size: 3rem;
+    }
+    @include d(t) {
+      font-size: 2rem;
+    }
+    @include d(m) {
+      font-size: 1.5rem;
+    }
+  }
+  &__subtitle {
+    font: 400 1.75rem/1.33 Roboto, Helvetica, Arial, sans-serif;
+    & > span {
+      background-image: linear-gradient(135deg, $primary-4, $primary-2);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    @include d(s) {
+      font-size: 1.5rem;
+    }
+    @include d(t) {
+      font-size: 1.25rem;
+    }
+    @include d(m) {
+      font-size: 1rem;
+    }
+  }
+}

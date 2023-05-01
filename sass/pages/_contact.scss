@@ -1,0 +1,191 @@
+.c-contact {
+  margin-bottom: 80px;
+  padding: 60px calc((100% - 1440px) / 2);
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  &__content {
+    width: 768px;
+    height: 432px;
+    margin: 0 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15),
+    0 0 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+  }
+  &__card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: all 385ms ease-in;
+
+    &.is-active {
+      clip-path: circle(100%);
+      transition-delay: 0s;
+      z-index: 2;
+    }
+
+    &:not(.is-active) {
+      transition-delay: 205ms;
+    }
+
+    &--email {
+      background-color: #ea4335;
+      clip-path: circle(5% at 725px 90%);
+
+      .c-button {
+        background-color: #fbbc04;
+        color: $w2;
+
+        &:hover {
+          background-color: darken(#fbbc04, 10%);
+        }
+      }
+    }
+
+    &--instagram {
+      background-color: #e4405f;
+      clip-path: circle(5% at 600px 90%);
+
+      .c-button {
+        background-color: #4f5bd5;
+
+        &:hover {
+          background-color: lighten(#4f5bd5, 5%);
+        }
+      }
+    }
+
+    &--linkedin {
+      background-color: #0077b5;
+      clip-path: circle(5% at 660px 90%);
+
+      .c-button {
+        background-color: $w1;
+        color: $b2;
+
+        &:hover {
+          background-color: darken($w1, 15%);
+        }
+      }
+    }
+
+    &--github {
+      background-color: #333333;
+      clip-path: circle(5% at 725px 90%);
+
+      .c-button {
+        background-color: #29933d;
+        color: $w2;
+
+        &:hover {
+          background-color: darken(#29933d, 10%);
+        }
+      }
+    }
+
+    &__title {
+      font-weight: normal;
+      line-height: 1;
+      margin: 0 30px;
+      color: $w1;
+
+      &-emphasis {
+        display: inline-block;
+        flex: 1;
+        font-size: 6rem;
+        font-weight: bold;
+        width: 100%;
+        color: $w1;
+      }
+    }
+
+    &__explanation {
+      line-height: 1.6;
+      max-width: 60ch;
+      margin: 30px 30px 12px;
+      color: $w3;
+    }
+  }
+  .c-button {
+    background-color: darken(#3da6c8, 12%);
+    border-radius: 30px;
+    color: $w1;
+    display: inline-block;
+    max-width: 210px;
+    padding: 9px 15px;
+    margin-left: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 90ms ease-in;
+  
+    &:hover {
+      background-color: #3da6c8;
+      transition: all 90ms ease-out;
+    }
+  
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+  .c-menu {
+    align-items: flex-end;
+    bottom: 0;
+    display: flex;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    right: 0;
+    padding: 0 30px 30px 0;
+    position: absolute;
+  
+    &__item {
+      margin-left: 15px;
+      z-index: 3;
+  
+      &--index {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+      }
+    }
+  
+    &__toggle {
+      background: transparent;
+      border: 0;
+      bottom: 30px;
+      cursor: pointer;
+      right: 30px;
+      padding: 0;
+      height: 30px;
+      width: 48px;
+      transition: all 150ms ease-in;
+  
+      &:active {
+        transform: translateY(2px);
+      }
+  
+      &.is-active {
+        fill: $w1;
+        pointer-events: none;
+      }
+  
+      > * {
+        pointer-events: none;
+      }
+  
+      svg {
+        width: 21px;
+      }
+    }
+  }
+}
+
+

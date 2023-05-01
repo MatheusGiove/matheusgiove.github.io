@@ -1,30 +1,7 @@
 /* 1200 pixels */
-
-@media (max-width: 1200px) {
-  .header-content a > img {
-    width: 40px;
-  }
-
-  .header-content {
-    gap: 20px;
-  }
-
-  .intro-content span {
-    margin-bottom: 100px;
-  }
-}
-
 /* 1000 pixels */
 
 @media (max-width: 1000px) {
-  .header-content a > img {
-    width: 36px;
-  }
-
-  .intro-content span {
-    margin-bottom: 80px;
-  }
-
   .contact-info,
   .contact-contact {
     padding: 40px 20px;
@@ -34,25 +11,9 @@
 /* 800 pixels */
 
 @media (max-width: 800px) {
-  .padding-page {
+  .u-padding__page {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-  
-  .intro-content img {
-    width: 82px;
-  }
-
-  .header-content a > img {
-    width: 32px;
-  }
-
-  .header-content {
-    gap: 20px;
-  }
-
-  .intro-content span {
-    margin-bottom: 60px;
   }
 
   .profile-content {
@@ -73,7 +34,7 @@
     top: -50px;
     left: -4px;
   }
-  
+
   .graduate {
     grid-template-columns: 1fr;
     gap: 60px;
@@ -103,7 +64,7 @@
   .projects-content {
     padding: 0px;
   }
-  
+
   .contact {
     grid-template-columns: 1fr;
   }
@@ -125,15 +86,11 @@
 /* 600 pixels */
 
 @media (max-width: 600px) {
-  .intro-content span {
-    margin-bottom: 40px;
-  }
-
   .skills-list li > img {
-    width: 96px;  
+    width: 96px;
   }
 
-  .padding-page {
+  .u-padding__page {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -145,18 +102,18 @@
   .form {
     grid-template-columns: 1fr;
   }
+
+  .competence-items {
+    padding: 10px;
+  }
 }
 
 /* 440 pixels */
 
 @media (max-width: 440px) {
-  .padding-page {
+  .u-padding__page {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-  
-  .header-content {
-    gap: 10px;
   }
 
   .paste-items::after,
@@ -164,8 +121,8 @@
     height: 60px;
     height: 60px;
   }
-  
-  .paste-items::before{
+
+  .paste-items::before {
     bottom: 80px;
   }
 
@@ -174,6 +131,11 @@
   }
 
   .skills-list li > img {
-    width: 64px;  
+    width: 64px;
+  }
+
+  .competence-items {
+    font-size: 0.75rem;
+    padding: 6px;
   }
 }

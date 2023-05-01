@@ -1,0 +1,175 @@
+.c-graduate {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  padding: 60px calc((100% - 1440px) / 2);
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-content: start;
+    padding: 0 20px;
+    gap: 0 40px;
+    @include d(s) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__title {
+    grid-row: span 4;
+    font-family: "Fira Code", sans-serif;
+    font-size: 8rem;
+    line-height: 1.12;
+    text-transform: uppercase;
+    max-width: 4ch;
+    word-break: break-all;
+    background: linear-gradient(
+      135deg,
+      rgba($primary-4, 1),
+      rgba($primary-2, 1)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    @include d(s) {
+      max-width: none;
+      word-break: normal;
+      font-size: 2rem;
+      text-align: center;
+      color: $primary-3;
+      margin-bottom: 60px;
+      position: relative;
+      &::after {
+        content: "";
+        width: 50px;
+        height: 5px;
+        left: calc(50% - 25px);
+        bottom: -22px;
+        background: $primary-3;
+        position: absolute;
+      }
+      &::before {
+        content: "";
+        width: 150px;
+        height: 1px;
+        bottom: -20px;
+        background: var(--b2);
+        position: absolute;
+      }
+    }
+  }
+  &__pastes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      flex: 1;
+      margin: 0 20px 8px 8px;
+      padding: 20px;
+      min-height: 200px;
+      background: $primary-3;//linear-gradient(135deg, $primary-4 15%, $primary-2 85%);
+      border-radius: 4px;
+      box-shadow: -8px 8px 0 lighten($primary-1, 10%);
+      position: relative;
+      &::after {
+        content: "";
+        width: 20px;
+        height: 70px;
+        right: -20px;
+        bottom: 20px;
+        background: $primary-3;
+        border-radius: 0 8px 8px 0;
+        position: absolute;
+      }
+      &::before {
+        content: "";
+        width: 12px;
+        height: 70px;
+        right: -12px;
+        bottom: 91px;
+        background: lighten($primary-1, 10%);
+        border-radius: 0 8px 8px 0;
+        position: absolute;
+      }
+      & > p {
+        display: grid;
+        gap: 6px;
+        font: 500 1.25rem/1 "Roboto", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        color: $w1;
+        margin-bottom: 24px;
+        & > span {
+          font-size: 1rem;
+          text-transform: lowercase;
+          color: $b3;
+        }
+      }
+      & > h3 {
+        flex: 1;
+        font: 700 1.8rem/1.2 "Roboto", Helvetica, Arial, sans-serif;
+        color: $b2;
+        margin-bottom: 40px;
+      }
+      & > span {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: $b3;
+      }
+    }
+  }
+  &__subtitles {
+    font: 700 1.25rem/1 "Roboto", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: $primary-3;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+    @include d(t) {
+      font-size: 1.125rem;
+    }
+  }
+  &__infos {
+    font-size: 1.5rem;
+    margin: 12px 0 0 44px;
+    & > li + li {
+      margin-top: 8px;
+    }
+    & > .c-graduate__course__items {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      & span {
+        color: var(--primary-5);
+      }
+      & > a:hover {
+        color: $secundary-4;
+        transition: 0.3s;
+      }
+    }
+    & > .c-graduate__language__items > span + span {
+      color: var(--primary-5);
+    }
+    &.graduate {
+      display: flex;
+      flex-wrap: wrap
+      ;
+      gap: 8px;
+      li {
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: .05rem;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 8px 12px;
+        border-radius: 4px;
+        background: var(--w2);
+        border: 1px solid var(--w3);
+      }
+    }
+    @include d(t) {
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -6,148 +6,183 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
   <title>Matheus Giove | Currículo</title>
 </head>
 
 <body>
-  <article class="intro">
-    <div class="intro-content">
-      <picture>
+
+  <!-- INTRODUÇÃO -->
+
+  <article class="c-home">
+    <header class="c-home__nav">
+      <nav>
+        <ul class="c-nav__content">
+          <li><a class="c-nav__link text-1 text-subtitle-b" href="#projects">Projetos</a></li>
+          <li><a class="c-nav__link text-1 text-subtitle-b" href="#skills">Skills</a></li>
+          <li><a class="c-nav__link text-1 text-subtitle-b" href="#profile">Perfil</a></li>
+          <li><a class="c-nav__link text-1 text-subtitle-b" href="#graduate">Graduação</a></li>
+          <li><a class="c-nav__link text-1 text-subtitle-b" href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="c-home__content">
+      <picture class="c-home__image">
         <img src="./svg/logo.svg" width="122" height="82" alt="Logo">
       </picture>
-      <h1 class="text-name-home captalize">matheus faria giove</h1>
-      <span class="text-name-sub gradient-text upper">~~~ web developer ~~~</span>
-    </div>
-    <header class="header">
-      <ul class="header-content">
-        <li><a href="#projects"><img src="svg/projects-icon.svg" width="48" height="48" alt="projects-icon-button"></a></li>
-        <li><a href="#skills"><img src="svg/skill-icon.svg" width="48" height="48" alt="skills-icon-button"></a></li>
-        <li><a href="#profile"><img src="svg/profile-icon.svg" width="48" height="48" alt="profile-icon-button"></a></li>
-        <li><a href="#graduate"><img src="svg/graduate-icon.svg" width="48" height="48" alt="graduate-icon-button"></a></li>
-        <li><a href="#contact"><img src="svg/contactb-icon.svg" width="48" height="48" alt="contact-icon-button"></a></li>
-      </ul>
-    </header>
-  </article>
-  <article id="profile" class="bg-2 profile padding-page">
-    <div class="profile-content container color-11">
-      <h2 class="text-subtitle color-title2 captalize">sobre mim</h2>
-      <picture>
-        <img src="./profile.jpeg" width="512" height="512" alt="">
-      </picture>
-      <div class="profile-text color-11">
-
-        <p class="text-1">Atualmente, estou cursando <strong>Bacharelado em Sistemas de Informação</strong> na Faculdade FMU e complementando minha formação com cursos online de desenvolvimento web. Tenho <strong>19 anos</strong> e meus principais conhecimentos são em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, além de ter um conhecimento básico em <strong>UI Design.</strong></p>
-
-        <p class="text-1">Estou sempre buscando maneiras de aprimorar minhas habilidades, e atualmente tenho me dedicado a criar projetos interessantes nessa área.Também tenho uma grande paixão pelo xadrez e pela música.</p>
-
-        <p class="text-1">Comecei a jogar <strong>xadrez</strong> aos 7 anos e tive a oportunidade de participar do início de um projeto de xadrez no <strong>Colégio Augusto Laranja</strong> com bolsa integral, desde o Ensino Fundamental II até o Ensino Médio, o que me permitiu viajar para diversos campeonatos, auxiliando o colégio a conquistar diversos títulos. Além disso, comecei a tocar <strong>violino</strong> aos 8 anos e descobri que a combinação dessas duas atividades contribuiu significativamente para o meu <strong>desenvolvimento intelectual</strong>, <strong>aprimoramento do raciocínio</strong> e <strong>habilidades sociais.</strong></p>
-
-      </div>
+      <h1 class="c-home__title text-name-home captalize">matheus faria giove</h1>
+      <span class="c-home__subtitle text-name-sub gradient-text upper">~~~ web developer ~~~</span>
     </div>
   </article>
-  <section class="bg-1 padding-page">
-    <div id="graduate" class="graduate container">
-      <h2 class="text-title color-subtitle upper">formação</h2>
-      <div class="graduate-content">
-        <ul class="graduate-paste-grad">
-          <li class="paste-items">
-            <h2 class="text-subtitle-p color-p1 upper">Bacharelado<span class="color-w captalize">2023 - 2027</span></h2>
-            <h1 class="text-2-m color-b">Sistemas de Informação </h1>
-            <span class="text-paste-grad color-9 upper">fmu</span>
-          <li class="paste-items">
-            <h2 class="text-subtitle-p color-p1 upper"> Colégio<span class="color-w captalize">2013 - jun 2021</span></h2>
-            <h1 class="text-2-m color-b">Ensino Fundamental</h1>
-            <span class="text-paste-grad color-9 upper">Colégio Augusto Laranja</span>
-          </li>
-          <li class="paste-items">
-            <h2 class="text-subtitle-p color-p1 upper"> Colégio<span class="color-w captalize">jul 2021 - 2021</span></h2>
-            <h1 class="text-2-m color-b">Ensino Médio</h1>
-            <span class="text-paste-grad color-9 upper">Colégio Octagon</span>
-          </li>
-        </ul>
-        <div class="graduate-course">
-          <h3 class="text-subtitle-b color-b upper">Cursos</h3>
-          <ul class="graduate-list text-2">
-            <li class="color-11"><a href="">UI Design - Origamid</a><span class="color-p1">34h</span></li>
-            <li class="color-11"><a href="">OneBitCode</a><span class="color-p1">72h</span></li>
-          </ul>
+
+  <!-- PERFIL -->
+
+  <main id="c-main">
+
+    <article id="profile" class="bg-2 profile u-padding__page">
+      <div class="profile-content container color-11">
+        <h2 class="text-subtitle color-title2 captalize">sobre mim</h2>
+        <picture>
+          <img src="./profile.jpeg" width="512" height="512" alt="">
+        </picture>
+        <div class="profile-text color-11">
+          <p class="text-1">Atualmente, estou cursando <strong>Bacharelado em Sistemas de Informação</strong> na Faculdade
+            FMU e complementando minha formação com cursos online de desenvolvimento web. Tenho <strong>19 anos</strong> e
+            meus principais conhecimentos são em <strong>HTML</strong>, <strong>CSS</strong> e
+            <strong>JavaScript</strong>, além de ter um conhecimento básico em <strong>UI Design.</strong>
+          </p>
+          <p class="text-1">Estou sempre buscando maneiras de aprimorar minhas habilidades, e atualmente tenho me dedicado
+            a criar projetos interessantes nessa área.Também tenho uma grande paixão pelo xadrez e pela música.</p>
+          <p class="text-1">Comecei a jogar <strong>xadrez</strong> aos 7 anos e tive a oportunidade de participar do
+            início de um projeto de xadrez no <strong>Colégio Augusto Laranja</strong> com bolsa integral, desde o Ensino
+            Fundamental II até o Ensino Médio, o que me permitiu viajar para diversos campeonatos, auxiliando o colégio a
+            conquistar diversos títulos. Além disso, comecei a tocar <strong>violino</strong> aos 8 anos e descobri que a
+            combinação dessas duas atividades contribuiu significativamente para o meu <strong>desenvolvimento
+              intelectual</strong>, <strong>aprimoramento do raciocínio</strong> e <strong>habilidades sociais.</strong>
+          </p>
         </div>
-        <div class="graduate-language">
-          <h3 class="text-subtitle-b color-b upper">Idiomas</h3>
-          <ul class="graduate-list text-2">
-            <li class="color-b graduate-language-items">Inglês <span class="color-p1">/ Intermediário</span></li>
-            <li class="color-b graduate-language-items">Espanhol <span class="color-p1">/ Intermediário</span></li>
-          </ul>
-        </div>
-        <div class="graduate-competence">
-          <h3 class="text-subtitle-b color-b upper">Competência</h3>
-          <ul class="graduate-list2 text-2">
-            <li class="color-11 competence-items">programação lógica</li>
-            <li class="color-11 competence-items">gestão de projetos</li>
-            <li class="color-11 competence-items">administração</li>
-            <li class="color-11 competence-items">web design</li>
-            <li class="color-11 competence-items">comunicação</li>
-            <li class="color-11 competence-items">resolução de problemas</li>
-            <li class="color-11 competence-items">habilidade analítica</li>
-            <li class="color-11 competence-items">estratégia</li>
-          </ul>
-        </div>
-        <!-- <div class="graduate-experience">
-          <h3 class="text-subtitle-b color-b upper">Experiência</h3>
-          <ul class="graduate-list text-2">
-            <li class="color-11">Monitora bolsista SOOI - UFABC <span class="color-p1">/ mar de 2022 - dez de 2022</span></li>
-            <li class="color-11">
-              Estagiária de direito - Defensoria Pública do Estado de São Paulo <span class="color-p1">/ jan de 2023 - today</span></li>
-          </ul>
-        </div> -->
       </div>
-    </div> 
-  </section>
-  <section id="skills" class="bg-2 skills padding-page">
-    <div class="container skills-content">
-      <h2 class="upper color-title text-title-2">&ltSkills&gt</h2>
-      <div class="skills-list">
-        <ul>
-          <li><img src="svg/javascript-icon.svg" width="128" height="128" alt="JavaScript-Icon"></li>
-          <li><img src="svg/html-icon.svg" width="128" height="128" alt="HTML5-Icon"></li>
-          <li><img src="svg/css-icon.svg" width="128" height="128" alt="CSS3-Icon"></li>
-        </ul>
-      </div>
-      <h2 class="upper color-title text-title-2">&lt/Skills&gt</h2>
-    </div>
-  </section>
-  <section id="projects" class="bg-1 padding-page">
-    <div class="container projects">
-      <h2 class="text-title color-subtitle upper">projetos</h2>
-      <div class="projects-content">
-        <!-- <div class="projects-content-items">
-          <h2 class="color-p1 text-title-2-p">Android</h2>
-          <picture>
-            <img src="./img/project1-img.jpg" alt="Project 1">
-          </picture>
-          <div class="buttons">
-            <a href="https://matheusgiove.github.io/projects/android/" target="_blank" rel="author"><span class="button"><img src="./svg/project-icon.svg" width="24" height="24" alt="project-icon">site</span></a>
-            <a href="https://github.com/MatheusGiove/projects/tree/main/android" target="_blank" rel="author"><span class="button"><img src="./svg/front-icon.svg" width="24" height="24" alt="project-icon">código</span></a>
+    </article>
+    <!-- GRADUAÇÃO -->
+    <section class="bg-1 u-padding__page">
+      <div id="graduate" class="graduate container">
+        <h2 class="text-title color-subtitle upper">formação</h2>
+        <div class="graduate-content">
+          <ul class="graduate-paste-grad">
+            <li class="paste-items">
+              <h2 class="text-subtitle-p color-p1 upper">Bacharelado<span class="color-w captalize">2023 - 2027</span>
+              </h2>
+              <h1 class="text-2-m color-b">Sistemas de Informação </h1>
+              <span class="text-paste-grad color-9 upper">fmu</span>
+            <li class="paste-items">
+              <h2 class="text-subtitle-p color-p1 upper"> Colégio<span class="color-w captalize">2013 - jun 2021</span>
+              </h2>
+              <h1 class="text-2-m color-b">Ensino Fundamental</h1>
+              <span class="text-paste-grad color-9 upper">Colégio Augusto Laranja</span>
+            </li>
+            <li class="paste-items">
+              <h2 class="text-subtitle-p color-p1 upper"> Colégio<span class="color-w captalize">jul 2021 - 2021</span>
+              </h2>
+              <h1 class="text-2-m color-b">Ensino Médio</h1>
+              <span class="text-paste-grad color-9 upper">Colégio Octagon</span>
+            </li>
+          </ul>
+          <div class="graduate-course">
+            <h3 class="text-subtitle-b color-b upper">Cursos</h3>
+            <ul class="graduate-list text-2">
+              <li class="color-11"><a href="">UI Design - Origamid</a><span class="color-p1">34h</span></li>
+              <li class="color-11"><a href="">OneBitCode</a><span class="color-p1">72h</span></li>
+            </ul>
           </div>
-          <p class="text-2 color-11">Esse foi meu primeiro projeto, fiz ele em conjunto aos vídeos do curso de <a class="color-p1" href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/"><strong>HTML</strong> e <strong>CSS</strong></a> do Curso em Vídeo, do Gustavo Guanabara. Um site simples, porém foi o início de todo meu estudo em HTML e CSS, onde peguei as primeiras noções com as linguagens. Criando um site sobre curiosidades sobre o Android.</p>
-        </div> -->
-        
-        <div class="projects-content-items">
-          <h2 class="color-p1 text-title-2-p">Lutearia Faria</h2>
-          <picture>
-            <img src="./img/project2-img.jpg" alt="Project 2">
-          </picture>
-          <div class="buttons">
-            <a href="https://matheusgiove.github.io/projects/lutearia/" target="_blank" rel="author"><span class="button"><img src="./svg/project-icon.svg" width="24" height="24" alt="project-icon">site</span></a>
-            <a href="https://github.com/MatheusGiove/projects/tree/main/lutearia" target="_blank" rel="author"><span class="button"><img src="./svg/front-icon.svg" width="24" height="24" alt="project-icon">código</span></a>
+          <div class="graduate-language">
+            <h3 class="text-subtitle-b color-b upper">Idiomas</h3>
+            <ul class="graduate-list text-2">
+              <li class="color-b graduate-language-items">Inglês <span class="color-p1">/ Intermediário</span></li>
+              <li class="color-b graduate-language-items">Espanhol <span class="color-p1">/ Intermediário</span></li>
+            </ul>
           </div>
-          <p class="text-2 color-11">Meu segundo projeto, foi um site de vendas de violino, inspirado no <a class="color-p1" href="https://bikcraft.origamid.dev/" target="_blank" rel="external"><strong>Bikicraft</strong></a>, projeto do curso Origamid do André Rafael, esse foi um projeto final do módulo de HTML e CSS, onde pude aprimorar meus conhecimentos nessas respectivas linguagens. Modelando diversas páginas do site e gerenciando os estilos, em um <strong>CSS Utilitário</strong></p>
+          <div class="graduate-competence">
+            <h3 class="text-subtitle-b color-b upper">Competência</h3>
+            <ul class="graduate-list2 text-2">
+              <li class="color-11 competence-items">programação lógica</li>
+              <li class="color-11 competence-items">gestão de projetos</li>
+              <li class="color-11 competence-items">administração</li>
+              <li class="color-11 competence-items">web design</li>
+              <li class="color-11 competence-items">comunicação</li>
+              <li class="color-11 competence-items">resolução de problemas</li>
+              <li class="color-11 competence-items">habilidade analítica</li>
+              <li class="color-11 competence-items">estratégia</li>
+            </ul>
+          </div>
+          <!-- <div class="graduate-experience">
+            <h3 class="text-subtitle-b color-b upper">Experiência</h3>
+            <ul class="graduate-list text-2">
+              <li class="color-11">Monitora bolsista SOOI - UFABC <span class="color-p1">/ mar de 2022 - dez de 2022</span></li>
+              <li class="color-11">
+                Estagiária de direito - Defensoria Pública do Estado de São Paulo <span class="color-p1">/ jan de 2023 - today</span></li>
+            </ul>
+          </div> -->
         </div>
       </div>
-    </div>
-  </section>
-  <section id="contact" class="padding-page">
+    </section>
+    <!-- SKILLS -->
+    <section id="skills" class="bg-2 skills u-padding__page">
+      <div class="container skills-content">
+        <h2 class="upper color-title text-title-2">&ltSkills&gt</h2>
+        <div class="skills-list">
+          <ul>
+            <li><img src="svg/javascript-icon.svg" width="128" height="128" alt="JavaScript-Icon"></li>
+            <li><img src="svg/html-icon.svg" width="128" height="128" alt="HTML5-Icon"></li>
+            <li><img src="svg/css-icon.svg" width="128" height="128" alt="CSS3-Icon"></li>
+          </ul>
+        </div>
+        <h2 class="upper color-title text-title-2">&lt/Skills&gt</h2>
+      </div>
+    </section>
+    <!-- PROJETOS -->
+    <section id="projects" class="bg-1 u-padding__page">
+      <div class="container projects">
+        <h2 class="text-title color-subtitle upper">projetos</h2>
+        <div class="projects-content">
+          <!-- <div class="projects-content-items">
+            <h2 class="color-p1 text-title-2-p">Android</h2>
+            <picture>
+              <img src="./img/project1-img.jpg" alt="Project 1">
+            </picture>
+            <div class="buttons">
+              <a href="https://matheusgiove.github.io/projects/android/" target="_blank" rel="author"><span class="button"><img src="./svg/project-icon.svg" width="24" height="24" alt="project-icon">site</span></a>
+              <a href="https://github.com/MatheusGiove/projects/tree/main/android" target="_blank" rel="author"><span class="button"><img src="./svg/front-icon.svg" width="24" height="24" alt="project-icon">código</span></a>
+            </div>
+            <p class="text-2 color-11">Esse foi meu primeiro projeto, fiz ele em conjunto aos vídeos do curso de <a class="color-p1" href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/"><strong>HTML</strong> e <strong>CSS</strong></a> do Curso em Vídeo, do Gustavo Guanabara. Um site simples, porém foi o início de todo meu estudo em HTML e CSS, onde peguei as primeiras noções com as linguagens. Criando um site sobre curiosidades sobre o Android.</p>
+          </div> -->
+          <div class="projects-content-items">
+            <h2 class="color-p1 text-title-2-p">Lutearia Faria</h2>
+            <picture>
+              <img src="./img/project2-img.jpg" alt="Project 2">
+            </picture>
+            <div class="buttons">
+              <a href="https://matheusgiove.github.io/projects/lutearia/" target="_blank" rel="author"><span
+                  class="button"><img src="./svg/project-icon.svg" width="24" height="24"
+                    alt="project-icon">site</span></a>
+              <a href="https://github.com/MatheusGiove/projects/tree/main/lutearia" target="_blank" rel="author"><span
+                  class="button"><img src="./svg/front-icon.svg" width="24" height="24"
+                    alt="project-icon">código</span></a>
+            </div>
+            <p class="text-2 color-11">Meu segundo projeto, foi um site de vendas de violino, inspirado no <a
+                class="color-p1" href="https://bikcraft.origamid.dev/" target="_blank"
+                rel="external"><strong>Bikicraft</strong></a>, projeto do curso Origamid do André Rafael, esse foi um
+              projeto final do módulo de HTML e CSS, onde pude aprimorar meus conhecimentos nessas respectivas linguagens.
+              Modelando diversas páginas do site e gerenciando os estilos, em um <strong>CSS Utilitário</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONTATO -->
+
+  <section id="contact" class="u-padding__page">
     <div class="contact container">
       <address class="contact-info">
         <h2 class="text-paste-grad color-w upper">informações</h2>
@@ -157,9 +192,12 @@
         <a class="text-1 color-2" href="tel:11994616349">+55 11 99461-6349</a>
         <h3 class="contact-info-mid text-subtitle-p color-w upper">mídia social</h3>
         <ul class="contact-list">
-          <li><a href="https://www.instagram.com/matheusgiove/" target="_blank" rel="author"><img src="./svg/instagram-icon.svg" width="24" height="24" alt="instagran-icon"></a></li>
-          <li><a href="https://www.linkedin.com/in/matheus-faria-giove-3a6159259/" target="_blank" rel="author"><img src="./svg/linkedin-icon.svg" width="24" height="24" alt="linkedin-icon"></a></li>
-          <li><a href="https://github.com/MatheusGiove" target="_blank" rel="author"><img src="./svg/github-icon.svg" width="24" height="24" alt="github-icon"></a></li>
+          <li><a href="https://www.instagram.com/matheusgiove/" target="_blank" rel="author"><img
+                src="./svg/instagram-icon.svg" width="24" height="24" alt="instagran-icon"></a></li>
+          <li><a href="https://www.linkedin.com/in/matheus-faria-giove-3a6159259/" target="_blank" rel="author"><img
+                src="./svg/linkedin-icon.svg" width="24" height="24" alt="linkedin-icon"></a></li>
+          <li><a href="https://github.com/MatheusGiove" target="_blank" rel="author"><img src="./svg/github-icon.svg"
+                width="24" height="24" alt="github-icon"></a></li>
         </ul>
       </address>
       <div class="contact-contact">
@@ -182,6 +220,9 @@
       </div>
     </div>
   </section>
+
+  <!-- RODAPÉ -->
+
   <footer id="footer">
     <div class="footer">
       <span class="text-1 color-w">Direitos Reservados © Site Criado por Matheus Faria</span>

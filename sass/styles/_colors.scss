@@ -1,0 +1,44 @@
+$primary-1: #0033aa;
+$primary-2: #0055cc;
+$primary-3: #0077ff;
+$primary-4: #1199ff;
+$primary-5: #22bbff;
+$secundary-1: #cc1100;
+$secundary-2: #ee3300;
+$secundary-3: #ff4411;
+$secundary-4: #ff7722;
+$secundary-5: #ff8822;
+$b1: #111122;
+$b2: #222233;
+$b3: #334455;
+$w1: #edf1f7;
+$w2: #e1e1e1;
+$w3: #bbccdd;
+
+:root {
+  --primary-1: #0033aa;
+  --primary-2: #0055cc;
+  --primary-3: #0077ff;
+  --primary-4: #1199ff;
+  --primary-5: #22bbff;
+  --b1: #111122;
+  --b2: #222233;
+  --b3: #334455;
+  --w1: #edf1f7;
+  --w2: #e1e1e1;
+  --w3: #bbccdd;
+}
+
+.dark-mode:root {
+  --primary-1: #0033aa;
+  --primary-2: #0055cc;
+  --primary-3: #0077ff;
+  --primary-4: #1199ff;
+  --primary-5: #ff8822;
+  --b1: #edf1f7;
+  --b2: #e1e1e1;
+  --b3: #bbccdd;
+  --w1: #111122;
+  --w2: #222233;
+  --w3: #334455;
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600;700&family=Roboto:wght@400;500;700&display=swap");
+@import "utilities/variables";
+@import "utilities/responsive";
+@import "styles/tipograph";
+@import "styles/colors";
+@import "styles/background";
+@import "pages/home";
+@import "pages/profile";
+@import "pages/graduate";
+@import "pages/skills";
+@import "pages/contact";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--b1);
+}
+
+img[src$=".jpeg"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--w1);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--w1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-3);
+}

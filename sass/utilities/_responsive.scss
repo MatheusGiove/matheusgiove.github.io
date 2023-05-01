@@ -1,0 +1,22 @@
+@mixin d($device) {
+  @if $device == fh {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+  @else if $device == s {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @else if $device == t {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @else if $device == m {
+    @media (max-width: 440px) {
+      @content;
+    }
+  }
+}
