@@ -14,8 +14,7 @@
   <!-- ====== Menu ====== -->
 
   <header id="header" class="c-header">
-    <a class="c-brand" href="./indexv2.html"><img src="./mfg-logo-dark-mode.svg" width="100"
-        alt="site-logo"></a>
+    <a class="c-brand" href="./indexv2.html"><img src="./mfg-logo-dark-mode.svg" width="100" alt="site-logo"></a>
     <nav class="c-menu">
       <button class="c-menu__button">
         <img src="./svg/list-icon.svg" alt="">
@@ -50,7 +49,8 @@
       <section class="c-profile__content">
         <div class="c-resume">
           <h2 class="c-resume__title">Sobre</h2>
-          <p class="c-resume__description">Atualmente, estou cursando <strong>Bacharelado em Sistemas de Informação</strong> na Faculdade
+          <p class="c-resume__description">Atualmente, estou cursando <strong>Bacharelado em Sistemas de
+              Informação</strong> na Faculdade
             FMU e complementando minha formação com cursos online de desenvolvimento web. Meus principais conhecimentos
             são em <strong>HTML</strong>, <strong>CSS</strong> e
             <strong>JavaScript</strong>, além disso, também possuo conhecimento básico em <strong>UI Design.</strong>
@@ -63,7 +63,8 @@
           <div class="c-content">
             <div class="c-job">
               <h3 class="c-job__title">Desenvolvedor Front-End</h3>
-              <p class="c-job__description">Estou sempre buscando maneiras de aprimorar minhas habilidades, e atualmente tenho me dedicado a criar
+              <p class="c-job__description">Estou sempre buscando maneiras de aprimorar minhas habilidades, e atualmente
+                tenho me dedicado a criar
                 projetos interessantes nessa área, podendo assim expandir meus conhecimentos.</p>
             </div>
             <div class="c-info">
@@ -87,7 +88,8 @@
             </div>
             <div class="c-more">
               <h4 class="c-more__title">Um pouco mais:</h4>
-              <p class="c-more__description">Comecei a jogar <strong>xadrez</strong> aos 7 anos e tive a oportunidade de participar do início de um
+              <p class="c-more__description">Comecei a jogar <strong>xadrez</strong> aos 7 anos e tive a oportunidade de
+                participar do início de um
                 projeto de xadrez no <strong>Colégio Augusto Laranja</strong> com bolsa integral, desde o Ensino
                 Fundamental II até o Ensino Médio, o que me permitiu viajar para diversos campeonatos, auxiliando o
                 colégio a conquistar diversos títulos. Além disso, comecei a tocar <strong>violino</strong> aos 8 anos e
@@ -204,17 +206,17 @@
     <!-- ====== Contato ====== -->
     <article id="contact" class="c-contact">
       <section class="c-contact__content">
-        <section class="c-contact__card c-contact__card--email js-card">
+        <section class="c-contact__card c-contact__card--email js-contactCard">
           <div class="c-contact__card__content">
             <h2 class="c-contact__card__title">
               Entre em contato via
-              <span class="c-contact__card__title-emphasis">GMAIL</span>
+              <span class="c-contact__card__title-emphasis">Gmail</span>
             </h2>
             <p class="c-contact__card__explanation">Entre em contato comigo via email para contratar meus serviços</p>
             <a class="c-button" href="">Entre em contato</a>
           </div>
         </section>
-        <section class="c-contact__card c-contact__card--instagram is-active">
+        <section class="c-contact__card c-contact__card--instagram js-contactCard">
           <div class="c-contact__card__content">
             <h2 class="c-contact__card__title">
               Me chame no
@@ -224,7 +226,7 @@
             <a class="c-button" href="">Ir para meu Instagram</a>
           </div>
         </section>
-        <section class="c-contact__card c-contact__card--linkedin">
+        <section class="c-contact__card c-contact__card--linkedin js-contactCard">
           <div class="c-contact__card__content">
             <h2 class="c-contact__card__title">
               Conheça meu
@@ -234,7 +236,7 @@
             <a class="c-button" href="">Ir para meu Linkedin</a>
           </div>
         </section>
-        <section class="c-contact__card c-contact__card--github">
+        <section class="c-contact__card c-contact__card--github js-contactCard">
           <div class="c-contact__card__content">
             <h2 class="c-contact__card__title">
               Veja meus projetos no
@@ -245,24 +247,39 @@
             <a class="c-button" href="">Ir para meu GitHub</a>
           </div>
         </section>
-        <ul class="c-menu">
-          <li class="c-menu__item">
-            <button class="c-menu__toggle">
-              Ola
+        <ul class="c-menu js-contactMenu">
+          <li class="c-menu__item" data-social-contact="email">
+            <button class="c-menu__toggle js-contactMenuToggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
             </button>
           </li>
-          <li class="c-menu__item">
-            <button class="c-menu__toggle">
-              Ola
+          <li class="c-menu__item" data-social-contact="instagram">
+            <button class="c-menu__toggle js-contactMenuToggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
             </button>
           </li>
-          <li class="c-menu__item">
-            <button class="c-menu__toggle">
-              Ola
+          <li class="c-menu__item" data-social-contact="linkedin">
+            <button class="c-menu__toggle js-contactMenuToggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
             </button>
           </li>
-          <li class="c-menu__item">
-            <button class="c-menu__toggle">
+          <li class="c-menu__item" data-social-contact="github">
+            <button class="c-menu__toggle js-contactMenuToggle">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>

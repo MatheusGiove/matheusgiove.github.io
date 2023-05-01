@@ -61,10 +61,34 @@ if (switcher) {
 }
 
 // <--===== Contact =====-->
-const card = document.querySelectorAll(".c-contact__card");
-const menu = document.querySelector(".c-menu");
-const menuToggle = document.querySelectorAll(".c-menu__toggle");
+const cards = document.querySelectorAll(".js-contactCard");
+const contactMenu = document.querySelector(".js-contactMenu");
+const contactMenuToggle = "js-contactMenuToggle";
+const contactToggle = document.querySelectorAll(`.${contactMenuToggle}`);
 
-// menu.addEventListener("click", (e) => {
-//   if (e.target.classList.contains())
-// })
+contactMenu.addEventListener("click", (event) => {
+  if (event.target.classList.contains(contactMenuToggle)) {
+    activateCard(event.target.parentElement);
+    markAsActiveMenuItem(event.target);
+  }
+});
+
+function activateCard(elemento) {
+  const socialContact = elemento.dataset.socialContact;
+
+  cards.forEach((card) => {
+    card.classList.remove("is-active");
+
+    if (card.classList.value.includes(socialContact)) {
+      card.classList.add("is-active");
+    }
+  });
+}
+
+function markAsActiveMenuItem(el) {
+  contactToggle.forEach((item) => {
+    item.classList.remove("is-active");
+  });
+
+  el.classList.add("is-active");
+}
