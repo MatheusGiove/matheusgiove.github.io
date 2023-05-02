@@ -16,7 +16,7 @@ if (typed) {
   new Typed("#typed", {
     strings: typed_strings,
     typeSpeed: 60,
-    backSpeed: 45,
+    backSpeed: 35,
     backDelay: 1500,
     loop: true,
   });

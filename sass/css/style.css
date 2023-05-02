@@ -826,15 +826,16 @@
   display: flex;
   justify-content: center;
 }
-.c-contact__content {
+.c-contact .c-content {
   width: 768px;
   height: 432px;
   margin: 0 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
   position: relative;
   display: flex;
+  border-radius: 10px;
 }
-.c-contact__card {
+.c-contact .c-card {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -845,66 +846,66 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  transition: all 385ms ease-in;
+  transition: all 0.5s ease-in;
 }
-.c-contact__card.is-active {
+.c-contact .c-card.is-active {
   clip-path: circle(100%);
   transition-delay: 0s;
   z-index: 2;
 }
-.c-contact__card:not(.is-active) {
-  transition-delay: 205ms;
+.c-contact .c-card:not(.is-active) {
+  transition-delay: 0.5s;
 }
-.c-contact__card--email {
+.c-contact .c-card--email {
   background-color: #ea4335;
-  clip-path: circle(5% at 725px 90%);
+  clip-path: circle(5% at 100% 100%);
 }
-.c-contact__card--email .c-button {
-  background-color: #fbbc04;
+.c-contact .c-card--email .c-button {
+  background-color: #c99603;
   color: #e1e1e1;
 }
-.c-contact__card--email .c-button:hover {
-  background-color: #c99603;
+.c-contact .c-card--email .c-button:hover {
+  background-color: #977102;
 }
-.c-contact__card--instagram {
+.c-contact .c-card--instagram {
   background-color: #e4405f;
-  clip-path: circle(5% at 600px 90%);
+  clip-path: circle(5% at 100% 100%);
 }
-.c-contact__card--instagram .c-button {
+.c-contact .c-card--instagram .c-button {
   background-color: #4f5bd5;
 }
-.c-contact__card--instagram .c-button:hover {
+.c-contact .c-card--instagram .c-button:hover {
   background-color: #646eda;
 }
-.c-contact__card--linkedin {
+.c-contact .c-card--linkedin {
   background-color: #0077b5;
-  clip-path: circle(5% at 660px 90%);
+  clip-path: circle(5% at 100% 100%);
 }
-.c-contact__card--linkedin .c-button {
+.c-contact .c-card--linkedin .c-button {
   background-color: #edf1f7;
   color: #222233;
 }
-.c-contact__card--linkedin .c-button:hover {
+.c-contact .c-card--linkedin .c-button:hover {
   background-color: #b8c8df;
 }
-.c-contact__card--github {
+.c-contact .c-card--github {
   background-color: #333333;
-  clip-path: circle(5% at 725px 90%);
+  clip-path: circle(5% at 100% 100%);
 }
-.c-contact__card--github .c-button {
+.c-contact .c-card--github .c-button {
   background-color: #29933d;
   color: #e1e1e1;
 }
-.c-contact__card--github .c-button:hover {
+.c-contact .c-card--github .c-button:hover {
   background-color: #1e6b2c;
 }
-.c-contact__card__title {
+.c-contact .c-card__title {
   font-weight: normal;
   line-height: 1;
   margin: 0 30px;
   color: #edf1f7;
 }
-.c-contact__card__title-emphasis {
+.c-contact .c-card__title-emphasis {
   display: inline-block;
   flex: 1;
   font-size: 6rem;
@@ -912,7 +913,12 @@
   width: 100%;
   color: #edf1f7;
 }
-.c-contact__card__explanation {
+@media (max-width: 440px) {
+  .c-contact .c-card__title-emphasis {
+    font-size: 3rem;
+  }
+}
+.c-contact .c-card__explanation {
   line-height: 1.6;
   max-width: 60ch;
   margin: 30px 30px 12px;
@@ -926,19 +932,29 @@
   max-width: 210px;
   padding: 9px 15px;
   margin-left: 30px;
+  margin-bottom: 60px;
   text-align: center;
   text-decoration: none;
   transition: all 90ms ease-in;
 }
+.c-contact .c-button > svg {
+  margin-left: 8px;
+}
 .c-contact .c-button:hover {
   background-color: #3da6c8;
-  transition: all 90ms ease-out;
+  transition: all 0.4s ease-out;
+  transform: scale(1.05);
+}
+.c-contact .c-button:hover > svg {
+  transform: translateX(5px);
+  transition: 0.4s ease;
 }
 .c-contact .c-button:active {
   transform: translateY(2px);
 }
 .c-contact .c-menu {
   align-items: flex-end;
+  gap: 20px;
   bottom: 0;
   display: flex;
   height: 100%;
@@ -964,8 +980,6 @@
   cursor: pointer;
   right: 30px;
   padding: 0;
-  height: 30px;
-  width: 48px;
   transition: all 150ms ease-in;
 }
 .c-contact .c-menu__toggle:active {
@@ -978,8 +992,15 @@
 .c-contact .c-menu__toggle > * {
   pointer-events: none;
 }
-.c-contact .c-menu__toggle svg {
-  width: 21px;
+
+.c-footer__text {
+  font: 400 1rem/1.12 "Roboto", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 16px 20px;
+  text-align: center;
+  background-color: #0055cc;
+  color: #edf1f7;
 }
 
 * {
