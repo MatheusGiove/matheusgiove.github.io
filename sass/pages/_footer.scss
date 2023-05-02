@@ -1,0 +1,11 @@
+.c-footer {
+  &__text {
+    font: 400 1rem/1.12 "Roboto", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 16px 20px;
+    text-align: center;
+    background-color: $primary-2;
+    color: $w1;
+  }
+}
