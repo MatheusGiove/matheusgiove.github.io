@@ -160,7 +160,6 @@
         transform: translateY(2px);
       }
       &.is-active {
-        fill: $w1;
         pointer-events: none;
       }
       > * {

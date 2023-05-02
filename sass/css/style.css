@@ -986,7 +986,6 @@
   transform: translateY(2px);
 }
 .c-contact .c-menu__toggle.is-active {
-  fill: #edf1f7;
   pointer-events: none;
 }
 .c-contact .c-menu__toggle > * {
