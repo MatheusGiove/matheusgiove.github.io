@@ -4,16 +4,16 @@
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
-  &__content {
+  .c-content {
     width: 768px;
     height: 432px;
     margin: 0 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15),
-    0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
     position: relative;
     display: flex;
+    border-radius: 10px;
   }
-  &__card {
+  .c-card {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -24,79 +24,63 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    transition: all 385ms ease-in;
-
+    transition: all 0.5s ease-in;
     &.is-active {
       clip-path: circle(100%);
       transition-delay: 0s;
       z-index: 2;
     }
-
     &:not(.is-active) {
-      transition-delay: 205ms;
+      transition-delay: 0.5s;
     }
-
     &--email {
       background-color: #ea4335;
-      clip-path: circle(5% at 200px 50%);
-
+      clip-path: circle(5% at 100% 100%);
       .c-button {
-        background-color: #fbbc04;
+        background-color: #c99603;
         color: $w2;
-
         &:hover {
-          background-color: darken(#fbbc04, 10%);
+          background-color: darken(#c99603, 10%);
         }
       }
     }
-
     &--instagram {
       background-color: #e4405f;
-      clip-path: circle(5% at 600px 90%);
-
+      clip-path: circle(5% at 100% 100%);
       .c-button {
         background-color: #4f5bd5;
-
         &:hover {
           background-color: lighten(#4f5bd5, 5%);
         }
       }
     }
-
     &--linkedin {
       background-color: #0077b5;
-      clip-path: circle(5% at 660px 90%);
-
+      clip-path: circle(5% at 100% 100%);
       .c-button {
         background-color: $w1;
         color: $b2;
-
         &:hover {
           background-color: darken($w1, 15%);
         }
       }
     }
-
     &--github {
       background-color: #333333;
-      clip-path: circle(5% at 725px 90%);
-
+      clip-path: circle(5% at 100% 100%);
       .c-button {
         background-color: #29933d;
         color: $w2;
-
         &:hover {
           background-color: darken(#29933d, 10%);
         }
       }
     }
-
     &__title {
       font-weight: normal;
       line-height: 1;
       margin: 0 30px;
       color: $w1;
-
       &-emphasis {
         display: inline-block;
         flex: 1;
@@ -104,9 +88,11 @@
         font-weight: bold;
         width: 100%;
         color: $w1;
+        @include d(m) {
+          font-size: 3rem;
+        }
       }
     }
-
     &__explanation {
       line-height: 1.6;
       max-width: 60ch;
@@ -122,21 +108,29 @@
     max-width: 210px;
     padding: 9px 15px;
     margin-left: 30px;
+    margin-bottom: 60px;
     text-align: center;
     text-decoration: none;
     transition: all 90ms ease-in;
-  
+    & > svg {
+      margin-left: 8px;
+    }
     &:hover {
       background-color: #3da6c8;
-      transition: all 90ms ease-out;
+      transition: all 0.4s ease-out;
+      transform: scale(1.05);
+      & > svg {
+        transform: translateX(5px);
+        transition: .4s ease;
+      }
     }
-  
     &:active {
       transform: translateY(2px);
     }
   }
   .c-menu {
     align-items: flex-end;
+    gap: 20px;
     bottom: 0;
     display: flex;
     height: 100%;
@@ -145,18 +139,15 @@
     right: 0;
     padding: 0 30px 30px 0;
     position: absolute;
-  
     &__item {
       margin-left: 15px;
       z-index: 3;
-  
       &--index {
         position: absolute;
         right: 30px;
         top: 30px;
       }
     }
-  
     &__toggle {
       background: transparent;
       border: 0;
@@ -164,28 +155,17 @@
       cursor: pointer;
       right: 30px;
       padding: 0;
-      height: 30px;
-      width: 48px;
       transition: all 150ms ease-in;
-  
       &:active {
         transform: translateY(2px);
       }
-  
       &.is-active {
         fill: $w1;
         pointer-events: none;
       }
-  
       > * {
         pointer-events: none;
-      }
-  
-      svg {
-        width: 21px;
       }
     }
   }
 }
-
-
