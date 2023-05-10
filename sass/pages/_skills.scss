@@ -41,14 +41,23 @@
   &__checkbox {
     display: flex;
     align-items: center;
-    max-width: fit-content;
-    gap: 12px;
+    justify-content: end;
+    gap: 8px;
     padding: 0 20px;
     margin-bottom: 20px;
-    cursor: pointer;
     @include d(s) {
       display: none;
     }
+  }
+  &__label {
+    cursor: pointer;
+  }
+  &__button {
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: $secundary-5;
+    transition: transform 0.4s ease-in-out;
   }
   &__switcher {
     display: flex;
@@ -58,19 +67,21 @@
     padding: 4px;
     cursor: pointer;
     border-radius: 50px;
-    background: #888;
+    background: $b3;
+    transition: background 0.4s ease-in-out;
+    &--active {
+      background: $primary-5;
+      .c-skills__button {
+        transform: translateX(30px);
+      }
+    }
+    &:not(&--active) {
+      .c-skills__button {
+        transform: translateX(0);
+      }
+    }
   }
-  &__button {
-    height: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background: $secundary-5;
-  }
-  &__switcher--active {
-    justify-content: end;
-    background: $primary-3;
-    transition: 0.3s;
-  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
