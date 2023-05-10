@@ -9,19 +9,16 @@
   list-style-type: none;
   color: var(--b1);
 }
-
+body {
+  overflow-x: hidden;
+  background: var(--w1);
+}
 img[src$=".jpeg"] {
   display: block;
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
-
-body {
-  overflow-x: hidden;
-  background: var(--w1);
-}
-
 ::-webkit-scrollbar {
   width: 5px;
 }
