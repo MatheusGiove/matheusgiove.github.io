@@ -11,7 +11,7 @@
     width: 768px;
     height: 432px;
     margin: 0 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.2);
     position: relative;
     display: flex;
     border-radius: 10px;
@@ -91,6 +91,9 @@
         font-weight: bold;
         width: 100%;
         color: $w1;
+        @include d(t) {
+          font-size: 4.25rem;
+        }
         @include d(m) {
           font-size: 3rem;
         }

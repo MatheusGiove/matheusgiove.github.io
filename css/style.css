@@ -63,19 +63,19 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 10px 40px;
+  padding: 20px;
   position: fixed;
-  width: calc(100% - 80px);
+  width: calc(100% - 40px);
   background: var(--w1);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 999;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 @media (max-width: 900px) {
   #header {
     padding-left: 12px;
     padding-top: 12px;
-    width: calc(100% - 52px);
+    width: calc(100% - 32px);
   }
 }
 #header .c-brand {
@@ -98,7 +98,7 @@
 }
 @media (max-width: 900px) {
   #header .c-menu__button {
-    display: flex;
+    display: block;
     background: #22bbff;
     padding: 10px;
     border-radius: 50%;
@@ -106,7 +106,7 @@
     place-self: center;
     position: fixed;
     cursor: pointer;
-    top: 8px;
+    top: 6px;
     right: 12px;
     z-index: 2;
   }
@@ -195,6 +195,7 @@
   position: relative;
   width: var(--width-of-switch);
   height: var(--height-of-switch);
+  margin-right: 0px;
 }
 #header #u-appearenceButton input {
   opacity: 0;
@@ -211,7 +212,7 @@
 }
 @media (max-width: 900px) {
   #header #u-appearenceButton {
-    margin-right: 40px;
+    margin-right: 60px;
   }
 }
 #header #u-appearenceButton .c-slider {
@@ -262,7 +263,7 @@
     height: 1100px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .c-introduction::after {
     display: none;
   }
@@ -283,7 +284,7 @@
     height: 700px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .c-introduction::before {
     display: none;
   }
@@ -650,7 +651,7 @@
     height: 1100px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .c-skills::after {
     display: none;
   }
@@ -671,7 +672,7 @@
     height: 700px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .c-skills::before {
     display: none;
   }
@@ -802,7 +803,7 @@
   width: 768px;
   height: 432px;
   margin: 0 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 0, 0, 0.2);
   position: relative;
   display: flex;
   border-radius: 10px;
@@ -884,6 +885,11 @@
   font-weight: bold;
   width: 100%;
   color: #edf1f7;
+}
+@media (max-width: 600px) {
+  .c-contact-card .c-card__title-emphasis {
+    font-size: 4.25rem;
+  }
 }
 @media (max-width: 440px) {
   .c-contact-card .c-card__title-emphasis {

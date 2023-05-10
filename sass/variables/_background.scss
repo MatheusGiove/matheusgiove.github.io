@@ -14,7 +14,7 @@
   @include d(fh) {
     height: 700px;
   }
-  @include d(s) {
+  @include d(t) {
     display: none;
   }
 }
@@ -32,7 +32,7 @@
   @include d(fh) {
     height: 1100px;
   }
-  @include d(s) {
+  @include d(t) {
     display: none;
   }
 }

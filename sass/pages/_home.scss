@@ -6,17 +6,17 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 10px 40px;
+  padding: 20px;
   position: fixed;
-  width: calc(100% - 80px);
+  width: calc(100% - 40px);
   background: var(--w1);
   box-shadow: 0 2px 10px rgba(#000, 0.05);
   z-index: 999;
-  overflow-x: scroll;
+  overflow-x: hidden;
   @include d(s) {
     padding-left: 12px;
     padding-top: 12px;
-    width: calc(100% - 52px);
+    width: calc(100% - 32px);
   }
   .c-brand {
     display: flex;
@@ -35,7 +35,7 @@
     &__button {
       display: none;
       @include d(s) {
-        display: flex;
+        display: block;
         background: $primary-5;
         padding: 10px;
         border-radius: 50%;
@@ -43,7 +43,7 @@
         place-self: center;
         position: fixed;
         cursor: pointer;
-        top: 8px;
+        top: 6px;
         right: 12px;
         z-index: 2;
         &:hover {
@@ -127,6 +127,7 @@
     position: relative;
     width: var(--width-of-switch);
     height: var(--height-of-switch);
+    margin-right: 0px;
     input {
       opacity: 0;
       width: 0;
@@ -143,7 +144,7 @@
       }
     }
     @include d(s) {
-      margin-right: 40px;
+      margin-right: 60px;
     }
     .c-slider {
       position: absolute;
