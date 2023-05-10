@@ -63,7 +63,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 20px;
+  padding: 12px 20px;
   position: fixed;
   width: calc(100% - 40px);
   background: var(--w1);
@@ -73,8 +73,6 @@
 }
 @media (max-width: 900px) {
   #header {
-    padding-left: 12px;
-    padding-top: 12px;
     width: calc(100% - 32px);
   }
 }
@@ -118,7 +116,6 @@
 #header .c-menu .c-list-menu {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
   gap: 20px;
 }
 @media (max-width: 900px) {
