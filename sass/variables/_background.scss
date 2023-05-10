@@ -15,14 +15,7 @@
     height: 700px;
   }
   @include d(s) {
-    top: 20px;
-    left: -30px;
-  }
-  @include d(t) {
-    left: -70px;
-  }
-  @include d(m) {
-    left: -100px;
+    display: none;
   }
 }
 
@@ -40,13 +33,6 @@
     height: 1100px;
   }
   @include d(s) {
-    top: 60px;
-    right: -30px;
-  }
-  @include d(t) {
-    right: -70px;
-  }
-  @include d(m) {
-    right: -110px;
+    display: none;
   }
 }

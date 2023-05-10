@@ -69,6 +69,7 @@
   background: var(--w1);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 999;
+  overflow-x: scroll;
 }
 @media (max-width: 900px) {
   #header {
@@ -263,18 +264,7 @@
 }
 @media (max-width: 900px) {
   .c-introduction::after {
-    top: 60px;
-    right: -30px;
-  }
-}
-@media (max-width: 600px) {
-  .c-introduction::after {
-    right: -70px;
-  }
-}
-@media (max-width: 440px) {
-  .c-introduction::after {
-    right: -110px;
+    display: none;
   }
 }
 .c-introduction::before {
@@ -295,18 +285,7 @@
 }
 @media (max-width: 900px) {
   .c-introduction::before {
-    top: 20px;
-    left: -30px;
-  }
-}
-@media (max-width: 600px) {
-  .c-introduction::before {
-    left: -70px;
-  }
-}
-@media (max-width: 440px) {
-  .c-introduction::before {
-    left: -100px;
+    display: none;
   }
 }
 .c-introduction__title {
@@ -673,18 +652,7 @@
 }
 @media (max-width: 900px) {
   .c-skills::after {
-    top: 60px;
-    right: -30px;
-  }
-}
-@media (max-width: 600px) {
-  .c-skills::after {
-    right: -70px;
-  }
-}
-@media (max-width: 440px) {
-  .c-skills::after {
-    right: -110px;
+    display: none;
   }
 }
 .c-skills::before {
@@ -705,18 +673,7 @@
 }
 @media (max-width: 900px) {
   .c-skills::before {
-    top: 20px;
-    left: -30px;
-  }
-}
-@media (max-width: 600px) {
-  .c-skills::before {
-    left: -70px;
-  }
-}
-@media (max-width: 440px) {
-  .c-skills::before {
-    left: -100px;
+    display: none;
   }
 }
 .c-skills__title {
@@ -1025,16 +982,16 @@
   color: var(--b1);
 }
 
+body {
+  overflow-x: hidden;
+  background: var(--w1);
+}
+
 img[src$=".jpeg"] {
   display: block;
   max-width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-body {
-  overflow-x: hidden;
-  background: var(--w1);
 }
 
 ::-webkit-scrollbar {

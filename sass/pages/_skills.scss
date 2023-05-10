@@ -5,6 +5,7 @@
   font: 600 1rem/1 "Roboto", Helvetica, Arial, sans-serif;
   letter-spacing: 0.08rem;
   position: relative;
+  //overflow-x: hidden;
   padding: 60px calc((100% - 1440px) / 2);
   &::after {
     @include bg-1-r;
