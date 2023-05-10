@@ -1,0 +1,32 @@
+@use "../variables/colors" as *;
+
+.c-title {
+  display: flex;
+  justify-content: center;
+  font: 700 2rem/1.33 "Roboto", Helvetica, Arial, sans-serif;
+  color: $primary-3;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 44px;
+  position: relative;
+  &::after {
+    content: "";
+    width: 50px;
+    height: 5px;
+    bottom: -20px;
+    background: $primary-3;
+    position: absolute;
+  }
+  &::before {
+    content: "";
+    width: 150px;
+    height: 1px;
+    bottom: -18px;
+    background: var(--b2);
+    position: absolute;
+  }
+}
+
+#contact .c-title{
+  margin-bottom: 0 !important;
+}

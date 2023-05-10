@@ -1,3 +1,6 @@
+@use "../variables/index" as *;
+@use "../utilities/index" as *;
+
 .c-skills {
   font: 600 1rem/1 "Roboto", Helvetica, Arial, sans-serif;
   letter-spacing: 0.08rem;

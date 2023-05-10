@@ -1,3 +1,6 @@
+@use "../variables/index" as *;
+@use "../utilities/index" as *;
+
 #header {
   display: flex;
   align-items: center;
@@ -180,7 +183,8 @@
     @include bg-1-l;
   }
   &__title {
-    font: 700 4rem/1.12 "Fira Code", Roboto, Helvetica, sans-serif;
+    font: 700 4rem / 1.12 "Fira Code", Roboto, Helvetica, sans-serif;
+    text-decoration: none;
     @include d(s) {
       font-size: 3rem;
     }
@@ -189,16 +193,17 @@
     }
     @include d(m) {
       font-size: 1.5rem;
-    }
+    };
   }
   &__subtitle {
-    font: 400 1.75rem/1.33 Roboto, Helvetica, Arial, sans-serif;
+    font: 400 1.75rem / 1.33 Roboto, Helvetica, Arial, sans-serif;
+    text-decoration: none;
     & > span {
       background-image: linear-gradient(135deg, $primary-4, $primary-2);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-    }
+    }  
     @include d(s) {
       font-size: 1.5rem;
     }
@@ -207,6 +212,6 @@
     }
     @include d(m) {
       font-size: 1rem;
-    }
+    };
   }
 }

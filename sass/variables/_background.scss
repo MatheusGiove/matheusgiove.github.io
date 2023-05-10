@@ -1,3 +1,6 @@
+@use "./colors" as *;
+@use "../utilities/index" as *;
+
 @mixin bg-1-l {
   position: absolute;
   content: "";

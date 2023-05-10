@@ -29,9 +29,9 @@ function changeMode() {
   const mode = document.querySelector("html");
   mode.classList.toggle("dark-mode");
   if (mode.classList.contains("dark-mode")) {
-    logo.setAttribute("src", "./mfg-logo-dark-mode.svg");
+    logo.setAttribute("src", "./svg/logos/logo-dm.svg");
   } else {
-    logo.setAttribute("src", "./mfg-logo.svg");
+    logo.setAttribute("src", "./svg/logos/logo.svg");
   }
 }
 if (darkModeButton) {

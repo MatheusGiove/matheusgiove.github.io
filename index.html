@@ -1,233 +1,304 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="dark-mode">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
-  <title>Matheus Giove | Currículo</title>
+  <link rel="shortcut icon" href="./svg/logos/favicon.svg" type="image/x-icon">
+  <title>Matheus Giove</title>
 </head>
 
 <body>
 
-  <!-- INTRODUÇÃO -->
+  <!-- ====== Menu ====== -->
 
-  <article class="c-home">
-    <header class="c-home__nav">
-      <nav>
-        <ul class="c-nav__content">
-          <li><a class="c-nav__link text-1 text-subtitle-b" href="#projects">Projetos</a></li>
-          <li><a class="c-nav__link text-1 text-subtitle-b" href="#skills">Skills</a></li>
-          <li><a class="c-nav__link text-1 text-subtitle-b" href="#profile">Perfil</a></li>
-          <li><a class="c-nav__link text-1 text-subtitle-b" href="#graduate">Graduação</a></li>
-          <li><a class="c-nav__link text-1 text-subtitle-b" href="#contact">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="c-home__content">
-      <picture class="c-home__image">
-        <img src="./svg/logo.svg" width="122" height="82" alt="Logo">
-      </picture>
-      <h1 class="c-home__title text-name-home captalize">matheus faria giove</h1>
-      <span class="c-home__subtitle text-name-sub gradient-text upper">~~~ web developer ~~~</span>
-    </div>
-  </article>
-
-  <!-- PERFIL -->
-
-  <main id="c-main">
-
-    <article id="profile" class="bg-2 profile u-padding__page">
-      <div class="profile-content container color-11">
-        <h2 class="text-subtitle color-title2 captalize">sobre mim</h2>
-        <picture>
-          <img src="./profile.jpeg" width="512" height="512" alt="">
-        </picture>
-        <div class="profile-text color-11">
-          <p class="text-1">Atualmente, estou cursando <strong>Bacharelado em Sistemas de Informação</strong> na Faculdade
-            FMU e complementando minha formação com cursos online de desenvolvimento web. Tenho <strong>19 anos</strong> e
-            meus principais conhecimentos são em <strong>HTML</strong>, <strong>CSS</strong> e
-            <strong>JavaScript</strong>, além de ter um conhecimento básico em <strong>UI Design.</strong>
-          </p>
-          <p class="text-1">Estou sempre buscando maneiras de aprimorar minhas habilidades, e atualmente tenho me dedicado
-            a criar projetos interessantes nessa área.Também tenho uma grande paixão pelo xadrez e pela música.</p>
-          <p class="text-1">Comecei a jogar <strong>xadrez</strong> aos 7 anos e tive a oportunidade de participar do
-            início de um projeto de xadrez no <strong>Colégio Augusto Laranja</strong> com bolsa integral, desde o Ensino
-            Fundamental II até o Ensino Médio, o que me permitiu viajar para diversos campeonatos, auxiliando o colégio a
-            conquistar diversos títulos. Além disso, comecei a tocar <strong>violino</strong> aos 8 anos e descobri que a
-            combinação dessas duas atividades contribuiu significativamente para o meu <strong>desenvolvimento
-              intelectual</strong>, <strong>aprimoramento do raciocínio</strong> e <strong>habilidades sociais.</strong>
-          </p>
-        </div>
-      </div>
-    </article>
-    <!-- GRADUAÇÃO -->
-    <section class="bg-1 u-padding__page">
-      <div id="graduate" class="graduate container">
-        <h2 class="text-title color-subtitle upper">formação</h2>
-        <div class="graduate-content">
-          <ul class="graduate-paste-grad">
-            <li class="paste-items">
-              <h2 class="text-subtitle-p color-p1 upper">Bacharelado<span class="color-w captalize">2023 - 2027</span>
-              </h2>
-              <h1 class="text-2-m color-b">Sistemas de Informação </h1>
-              <span class="text-paste-grad color-9 upper">fmu</span>
-            <li class="paste-items">
-              <h2 class="text-subtitle-p color-p1 upper"> Colégio<span class="color-w captalize">2013 - jun 2021</span>
-              </h2>
-              <h1 class="text-2-m color-b">Ensino Fundamental</h1>
-              <span class="text-paste-grad color-9 upper">Colégio Augusto Laranja</span>
-            </li>
-            <li class="paste-items">
-              <h2 class="text-subtitle-p color-p1 upper"> Colégio<span class="color-w captalize">jul 2021 - 2021</span>
-              </h2>
-              <h1 class="text-2-m color-b">Ensino Médio</h1>
-              <span class="text-paste-grad color-9 upper">Colégio Octagon</span>
-            </li>
-          </ul>
-          <div class="graduate-course">
-            <h3 class="text-subtitle-b color-b upper">Cursos</h3>
-            <ul class="graduate-list text-2">
-              <li class="color-11"><a href="">UI Design - Origamid</a><span class="color-p1">34h</span></li>
-              <li class="color-11"><a href="">OneBitCode</a><span class="color-p1">72h</span></li>
-            </ul>
-          </div>
-          <div class="graduate-language">
-            <h3 class="text-subtitle-b color-b upper">Idiomas</h3>
-            <ul class="graduate-list text-2">
-              <li class="color-b graduate-language-items">Inglês <span class="color-p1">/ Intermediário</span></li>
-              <li class="color-b graduate-language-items">Espanhol <span class="color-p1">/ Intermediário</span></li>
-            </ul>
-          </div>
-          <div class="graduate-competence">
-            <h3 class="text-subtitle-b color-b upper">Competência</h3>
-            <ul class="graduate-list2 text-2">
-              <li class="color-11 competence-items">programação lógica</li>
-              <li class="color-11 competence-items">gestão de projetos</li>
-              <li class="color-11 competence-items">administração</li>
-              <li class="color-11 competence-items">web design</li>
-              <li class="color-11 competence-items">comunicação</li>
-              <li class="color-11 competence-items">resolução de problemas</li>
-              <li class="color-11 competence-items">habilidade analítica</li>
-              <li class="color-11 competence-items">estratégia</li>
-            </ul>
-          </div>
-          <!-- <div class="graduate-experience">
-            <h3 class="text-subtitle-b color-b upper">Experiência</h3>
-            <ul class="graduate-list text-2">
-              <li class="color-11">Monitora bolsista SOOI - UFABC <span class="color-p1">/ mar de 2022 - dez de 2022</span></li>
-              <li class="color-11">
-                Estagiária de direito - Defensoria Pública do Estado de São Paulo <span class="color-p1">/ jan de 2023 - today</span></li>
-            </ul>
-          </div> -->
-        </div>
-      </div>
-    </section>
-    <!-- SKILLS -->
-    <section id="skills" class="bg-2 skills u-padding__page">
-      <div class="container skills-content">
-        <h2 class="upper color-title text-title-2">&ltSkills&gt</h2>
-        <div class="skills-list">
-          <ul>
-            <li><img src="svg/javascript-icon.svg" width="128" height="128" alt="JavaScript-Icon"></li>
-            <li><img src="svg/html-icon.svg" width="128" height="128" alt="HTML5-Icon"></li>
-            <li><img src="svg/css-icon.svg" width="128" height="128" alt="CSS3-Icon"></li>
-          </ul>
-        </div>
-        <h2 class="upper color-title text-title-2">&lt/Skills&gt</h2>
-      </div>
-    </section>
-    <!-- PROJETOS -->
-    <section id="projects" class="bg-1 u-padding__page">
-      <div class="container projects">
-        <h2 class="text-title color-subtitle upper">projetos</h2>
-        <div class="projects-content">
-          <!-- <div class="projects-content-items">
-            <h2 class="color-p1 text-title-2-p">Android</h2>
-            <picture>
-              <img src="./img/project1-img.jpg" alt="Project 1">
-            </picture>
-            <div class="buttons">
-              <a href="https://matheusgiove.github.io/projects/android/" target="_blank" rel="author"><span class="button"><img src="./svg/project-icon.svg" width="24" height="24" alt="project-icon">site</span></a>
-              <a href="https://github.com/MatheusGiove/projects/tree/main/android" target="_blank" rel="author"><span class="button"><img src="./svg/front-icon.svg" width="24" height="24" alt="project-icon">código</span></a>
-            </div>
-            <p class="text-2 color-11">Esse foi meu primeiro projeto, fiz ele em conjunto aos vídeos do curso de <a class="color-p1" href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/"><strong>HTML</strong> e <strong>CSS</strong></a> do Curso em Vídeo, do Gustavo Guanabara. Um site simples, porém foi o início de todo meu estudo em HTML e CSS, onde peguei as primeiras noções com as linguagens. Criando um site sobre curiosidades sobre o Android.</p>
-          </div> -->
-          <div class="projects-content-items">
-            <h2 class="color-p1 text-title-2-p">Lutearia Faria</h2>
-            <picture>
-              <img src="./img/project2-img.jpg" alt="Project 2">
-            </picture>
-            <div class="buttons">
-              <a href="https://matheusgiove.github.io/projects/lutearia/" target="_blank" rel="author"><span
-                  class="button"><img src="./svg/project-icon.svg" width="24" height="24"
-                    alt="project-icon">site</span></a>
-              <a href="https://github.com/MatheusGiove/projects/tree/main/lutearia" target="_blank" rel="author"><span
-                  class="button"><img src="./svg/front-icon.svg" width="24" height="24"
-                    alt="project-icon">código</span></a>
-            </div>
-            <p class="text-2 color-11">Meu segundo projeto, foi um site de vendas de violino, inspirado no <a
-                class="color-p1" href="https://bikcraft.origamid.dev/" target="_blank"
-                rel="external"><strong>Bikicraft</strong></a>, projeto do curso Origamid do André Rafael, esse foi um
-              projeto final do módulo de HTML e CSS, onde pude aprimorar meus conhecimentos nessas respectivas linguagens.
-              Modelando diversas páginas do site e gerenciando os estilos, em um <strong>CSS Utilitário</strong></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- CONTATO -->
-
-  <section id="contact" class="u-padding__page">
-    <div class="contact container">
-      <address class="contact-info">
-        <h2 class="text-paste-grad color-w upper">informações</h2>
-        <h3 class="contact-info-mail text-subtitle-p color-w upper">email</h3>
-        <a class="text-1 color-2" href="mailto:matheusgiove08@gmail.com">matheusgiove08@gmail.com</a>
-        <h3 class="contact-info-tel text-subtitle-p color-w upper">telefone</h3>
-        <a class="text-1 color-2" href="tel:11994616349">+55 11 99461-6349</a>
-        <h3 class="contact-info-mid text-subtitle-p color-w upper">mídia social</h3>
-        <ul class="contact-list">
-          <li><a href="https://www.instagram.com/matheusgiove/" target="_blank" rel="author"><img
-                src="./svg/instagram-icon.svg" width="24" height="24" alt="instagran-icon"></a></li>
-          <li><a href="https://www.linkedin.com/in/matheus-faria-giove-3a6159259/" target="_blank" rel="author"><img
-                src="./svg/linkedin-icon.svg" width="24" height="24" alt="linkedin-icon"></a></li>
-          <li><a href="https://github.com/MatheusGiove" target="_blank" rel="author"><img src="./svg/github-icon.svg"
-                width="24" height="24" alt="github-icon"></a></li>
-        </ul>
-      </address>
-      <div class="contact-contact">
-        <h2 class="text-paste-grad color-w upper">contato</h2>
-        <form class="form" action="./index.html">
-          <div>
-            <label class="text-1 color-w" for="name">Nome</label>
-            <input type="text" id="name" name="name" placeholder="Matheus Faria">
-          </div>
-          <div>
-            <label class="text-1 color-w" for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com">
-          </div>
-          <div class="col-2">
-            <label class="text-1 color-w" for="text">Mensagem</label>
-            <textarea name="text" id="text" rows="10" placeholder="Mande sua mensagem"></textarea>
-          </div>
-          <button class="button2 col-2">enviar <span><img src="./svg/send-icon.svg" alt="send-icon"></span></button>
-        </form>
-      </div>
-    </div>
+  <header id="header" class="c-header">
+    <a class="c-brand" href="./index.html"><img src="./svg/logos/logo-dm.svg" width="100" alt="site-logo"></a>
+    <nav class="c-menu">
+      <button class="c-menu__button">
+        <img src="./svg/list-icon.svg" alt="list-menu">
+      </button>
+      <ul class="c-list-menu">
+        <li class="c-link"><a href="#home">Home</a></li>
+        <li class="c-link"><a href="#profile">Perfil</a></li>
+        <li class="c-link"><a href="#graduate">Graduação</a></li>
+        <li class="c-link"><a href="#skills">Habilidades</a></li>
+        <li class="c-link"><a href="#projects">Projetos</a></li>
+        <li class="c-link"><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+    <label id="u-appearenceButton">
+      <input type="checkbox" checked>
+      <span class="c-slider"></span>
+    </label>
+  </header>
+  <section id="home" class="c-introduction">
+    <picture><img class="c-logo" src="./svg/logo-home.svg" alt="Logo"></picture>
+    <h1 class="c-introduction__title">Matheus Faria Giove</h1>
+    <p class="c-introduction__subtitle">Sou
+      <span id="typed" data-typed-items=",Web Designer, Desenvolvedor Fullstack, Freelancer">
+      </span>
+    </p>
   </section>
 
-  <!-- RODAPÉ -->
+  <main id="main">
 
-  <footer id="footer">
-    <div class="footer">
-      <span class="text-1 color-w">Direitos Reservados © Site Criado por Matheus Faria</span>
-    </div>
-  </footer>
+    <!-- ====== Perfil ====== -->
+    <article id="profile" class="c-profile">
+      <section class="c-profile__content">
+        <div class="c-resume">
+          <h2 class="c-title">Sobre</h2>
+          <p class="c-resume__description">Atualmente, estou cursando <strong>Bacharelado em Sistemas de
+              Informação</strong> na Faculdade
+            FMU e complementando minha formação com cursos online de desenvolvimento web. Meus principais conhecimentos
+            são em <strong>HTML</strong>, <strong>CSS</strong> e
+            <strong>JavaScript</strong>, além disso, também possuo conhecimento básico em <strong>UI Design.</strong>
+          </p>
+        </div>
+        <div class="c-about">
+          <picture class="c-image">
+            <img src="./img/profile.jpeg" width="512" height="512" alt="profile_logo">
+          </picture>
+          <div class="c-content">
+            <div class="c-job">
+              <h3 class="c-job__title">Desenvolvedor Front-End</h3>
+              <p class="c-job__description">Estou sempre buscando maneiras de aprimorar minhas habilidades, e atualmente
+                tenho me dedicado a criar
+                projetos interessantes nessa área, podendo assim expandir meus conhecimentos.</p>
+            </div>
+            <div class="c-info">
+              <ul class="c-info__list">
+                <li class="c-info__item">
+                  <span>Nascimento: </span>08/08/2003
+                </li>
+                <li class="c-info__item">
+                  <span>Idade: </span>19
+                </li>
+                <li class="c-info__item">
+                  <span>Cidade: </span>São Paulo, SP
+                </li>
+                <li class="c-info__item">
+                  <span>Email: </span>
+                  <a href="mailto:matheusgiove@contato.com">matheusgiove@contato.com</a>
+                </li>
+                <!-- <li class="c-info__item"></li> -->
+                <!-- <li class="c-info__item"></li> -->
+              </ul>
+            </div>
+            <div class="c-more">
+              <h4 class="c-more__title">Um pouco mais:</h4>
+              <p class="c-more__description">Comecei a jogar <strong>xadrez</strong> aos 7 anos e tive a oportunidade de
+                participar do início de um
+                projeto de xadrez no <strong>Colégio Augusto Laranja</strong> com bolsa integral, desde o Ensino
+                Fundamental II até o Ensino Médio, o que me permitiu viajar para diversos campeonatos, auxiliando o
+                colégio a conquistar diversos títulos. Além disso, comecei a tocar <strong>violino</strong> aos 8 anos e
+                a combinação dessas duas atividades contribuiu significativamente para o meu
+                <strong>desenvolvimento intelectual</strong>, e <strong>aprimoramento do raciocínio lógico</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <!-- ====== Graduação ====== -->
+    <section id="graduate" class="c-graduate">
+      <div class="c-graduate__content">
+        <h2 class="c-graduate__title">formação</h2>
+        <div class="c-graduate__formation">
+          <ul class="c-graduate__pastes">
+            <li class="c-graduate__pastes__items">
+              <p>Bacharelado<span>2023 - Atualmente</span></p>
+              <h3>Sistemas de Informação</h3>
+              <span>FMU</span>
+            </li>
+          </ul>
+        </div>
+        <div class="c-graduate__course">
+          <h3 class="c-graduate__subtitles"><span><img src="./svg/graduate/course-icon.svg" alt="course-icon" width="32px"
+                height="32px"></span>cursos</h3>
+          <ul class="c-graduate__infos">
+            <li class="c-graduate__course__items"><a href="">UI Design - Origamid</a><span>34h</span></li>
+            <li class="c-graduate__course__items"><a href="">OneBitCode</a><span>72h</span></li>
+          </ul>
+        </div>
+        <div class="c-graduate__language">
+          <h3 class="c-graduate__subtitles"><span><img src="./svg/graduate/language-icon.svg" alt="language-icon" width="32px"
+                height="32px"></span>idiomas</h3>
+          <ul class="c-graduate__infos">
+            <li class="c-graduate__language__items">
+              <span>Inglês </span>
+              <span>/ Intermediário</span>
+            </li>
+            <li class="c-graduate__language__items">
+              <span>Espanhol </span>
+              <span>/ Básico</span>
+            </li>
+          </ul>
+        </div>
+        <div class="c-graduate__competence">
+          <h3 class="c-graduate__subtitles"><span><img src="./svg/graduate/competence-icon.svg" alt="competence-icon"
+                width="32px" height="32px"></span>competências</h3>
+          <ul class="c-graduate__infos graduate">
+            <li class="c-graduate__competence__items">programação lógica</li>
+            <li class="c-graduate__competence__items">web design</li>
+            <li class="c-graduate__competence__items">habilidade analítica</li>
+            <li class="c-graduate__competence__items">resolução de problemas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Skills ====== -->
+    <section id="skills" class="c-skills">
+      <h2 class="c-title">habilidades</h2>
+      <div>
+        <label class="c-skills__checkbox" for="c-skills__checkbox">
+          MOSTRAR TUDO
+          <span class="c-skills__switcher">
+            <span class="c-skills__button"></span>
+          </span>
+          <input type="checkbox" id="c-skills__checkbox" hidden>
+        </label>
+      </div>
+
+      <ul class="c-skills__container">
+        <li class="c-skills__card">
+          <div class="c-skills__content">
+            <img src="svg/skills/javascript-icon.svg" width="96" height="96" alt="javaScript-Icon">
+            <h3>JavaScript</h3>
+          </div>
+        </li>
+        <li class="c-skills__card">
+          <div class="c-skills__content">
+            <img src="svg/skills/html-icon.svg" width="96" height="96" alt="html-Icon">
+            <h3>HTML</h3>
+          </div>
+        </li>
+        <li class="c-skills__card">
+          <div class="c-skills__content">
+            <img src="svg/skills/css-icon.svg" width="96" height="96" alt="css-Icon">
+            <h3>CSS</h3>
+          </div>
+        </li>
+        <li class="c-skills__card">
+          <div class="c-skills__content">
+            <img src="svg/skills/sass-icon.svg" width="96" height="96" alt="sass-Icon">
+            <h3>SASS</h3>
+          </div>
+        </li>
+        <li class="c-skills__card">
+          <div class="c-skills__content">
+            <img src="svg/skills/react-icon.svg" width="96" height="96" alt="react-Icon">
+            <h3>REACT</h3>
+          </div>
+        </li>
+        <li class="c-skills__card">
+          <div class="c-skills__content">
+            <img src="svg/skills/nodejs-icon.svg" width="96" height="96" alt="nodejs-Icon">
+            <h3>NodeJS</h3>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- ====== Projetos ====== -->
+    <section id="projects" class="c-projects">
+    </section>
+    <!-- ====== Contato ====== -->
+    <article id="contact" class="c-contact">
+      <h2 class="c-title">contato</h2>
+      <section class="c-contact-card">
+        <section class="c-content">
+          <section class="c-card c-card--linkedin is-active js-contactCard">
+            <div class="c-card__content">
+              <h2 class="c-card__title">
+                Conheça meu
+                <span class="c-card__title-emphasis"> Linkedin</span>
+              </h2>
+              <p class="c-card__explanation">Veja meu perfil e conheça um pouco mais sobre mim</p>
+              <a class="c-button" href="https://www.linkedin.com/in/matheus-faria-giove-3a6159259/" target="_blank" rel="autor">Ir para meu Linkedin<svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5H17M17 5L12.6364 1M17 5L12.6364 9" stroke="#222233" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></a>
+            </div>
+          </section>
+          <section class="c-card c-card--github js-contactCard">
+            <div class="c-card__content">
+              <h2 class="c-card__title">
+                Veja meus projetos no
+                <span class="c-card__title-emphasis"> GitHub</span>
+              </h2>
+              <p class="c-card__explanation">Todos meus projetos prontos e em produção estão aqui, venha ver
+                conheçer meu trabalho</p>
+              <a class="c-button" href="https://github.com/MatheusGiove" target="_blank" rel="autor">Ir para meu GitHub<svg width="18" height="10"
+                  viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5H17M17 5L12.6364 1M17 5L12.6364 9" stroke="#e1e1e1" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+                </svg></a>
+            </div>
+          </section>
+          <section class="c-card c-card--instagram js-contactCard">
+            <div class="c-card__content">
+              <h2 class="c-card__title">
+                Me chame no
+                <span class="c-card__title-emphasis"> Instagram</span>
+              </h2>
+              <p class="c-card__explanation">Entre em contato para tirar dúvidas sobre projetos</p>
+              <a class="c-button" href="https://www.instagram.com/matheusgiove/" target="_blank" rel="autor">Ir para meu Instagram<svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5H17M17 5L12.6364 1M17 5L12.6364 9" stroke="#e1e1e1" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></a>
+            </div>
+          </section>
+          <section class="c-card c-card--email js-contactCard">
+            <div class="c-card__content">
+              <h2 class="c-card__title">
+                Entre em contato via
+                <span class="c-card__title-emphasis">Gmail</span>
+              </h2>
+              <p class="c-card__explanation">Entre em contato comigo via email para contratar meus serviços</p>
+              <a class="c-button" href="#">Entre em contato<svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5H17M17 5L12.6364 1M17 5L12.6364 9" stroke="#e1e1e1" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></a>
+            </div>
+          </section>
+          <ul class="c-menu js-contactMenu">
+            <li class="c-menu__item" data-social-contact="linkedin">
+              <button class="c-menu__toggle is-active js-contactMenuToggle">
+                <img src="./svg/contact/linkedin-icon.svg" alt="linkedin-icon">
+              </button>
+            </li>
+            <li class="c-menu__item" data-social-contact="github">
+              <button class="c-menu__toggle js-contactMenuToggle">
+                <img src="./svg/contact/github-icon.svg" alt="github-icon">
+              </button>
+            </li>
+            <li class=" c-menu__item" data-social-contact="instagram">
+              <button class="c-menu__toggle js-contactMenuToggle">
+                <img src="./svg/contact/instagram-icon.svg" alt="instgram-icon">
+              </button>
+            </li>
+            <li class="c-menu__item" data-social-contact="email">
+              <button class="c-menu__toggle js-contactMenuToggle">
+                <img src="./svg/contact/gmail-icon.svg" alt="gmail-icon">
+              </button>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </article>
+    <!-- ====== Footer ====== -->
+    <footer id="footer" class="c-footer">
+      <p class="c-footer__text">Designed by Matheus Faria Giove &copy; Todos direitos reservados.</p>
+    </footer>
+  </main>
+  <script src="./js/typed/typed.min.js"></script>
+  <script src="./js/vanilla-tilt/vanilla-tilt.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

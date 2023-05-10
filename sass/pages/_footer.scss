@@ -1,3 +1,6 @@
+@use "../variables/index" as *;
+@use "../utilities/index" as *;
+
 .c-footer {
   &__text {
     font: 400 1rem/1.12 "Roboto", Helvetica, Arial, sans-serif;

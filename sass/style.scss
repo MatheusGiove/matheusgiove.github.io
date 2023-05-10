@@ -1,17 +1,7 @@
+@forward "variables";
+@forward "utilities";
+@forward "pages";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600;700&family=Roboto:wght@400;500;700&display=swap");
-@import "utilities/variables";
-@import "utilities/responsive";
-@import "styles/tipograph";
-@import "styles/colors";
-@import "styles/background";
-@import "pages/home";
-@import "pages/profile";
-@import "pages/graduate";
-@import "pages/skills";
-@import "pages/projects";
-@import "pages/contact";
-@import "pages/footer";
-
 * {
   margin: 0;
   padding: 0;
