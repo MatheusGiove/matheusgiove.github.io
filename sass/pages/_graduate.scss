@@ -132,6 +132,9 @@
     @include d(t) {
       font-size: 1.125rem;
     }
+    @include d(m) {
+      font-size: 1rem;
+    }
   }
   &__infos {
     font-size: 1.5rem;
@@ -141,6 +144,7 @@
     }
     & > .c-graduate__course__items {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       gap: 20px;
       & span {
@@ -156,8 +160,7 @@
     }
     &.graduate {
       display: flex;
-      flex-wrap: wrap
-      ;
+      flex-wrap: wrap;
       gap: 8px;
       li {
         font-size: 1rem;
@@ -171,8 +174,14 @@
         border: 1px solid var(--w3);
       }
     }
+    @include d(s) {
+      font-size: 1.35rem;
+    }
     @include d(t) {
       font-size: 1.25rem;
+    }
+    @include d(m) {
+      font-size: 1.125rem;
     }
   }
 }

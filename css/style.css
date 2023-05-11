@@ -586,6 +586,11 @@
     font-size: 1.125rem;
   }
 }
+@media (max-width: 440px) {
+  .c-graduate__subtitles {
+    font-size: 1rem;
+  }
+}
 .c-graduate__infos {
   font-size: 1.5rem;
   margin: 12px 0 0 44px;
@@ -595,6 +600,7 @@
 }
 .c-graduate__infos > .c-graduate__course__items {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
@@ -624,9 +630,19 @@
   background: var(--w2);
   border: 1px solid var(--w3);
 }
+@media (max-width: 900px) {
+  .c-graduate__infos {
+    font-size: 1.35rem;
+  }
+}
 @media (max-width: 600px) {
   .c-graduate__infos {
     font-size: 1.25rem;
+  }
+}
+@media (max-width: 440px) {
+  .c-graduate__infos {
+    font-size: 1.125rem;
   }
 }
 
