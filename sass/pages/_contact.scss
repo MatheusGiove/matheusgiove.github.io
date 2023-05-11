@@ -15,6 +15,10 @@
     position: relative;
     display: flex;
     border-radius: 10px;
+    @include d(fh) {
+      width: 1000px;
+      height: 562px;
+    }
   }
   .c-card {
     border-radius: 10px;
@@ -82,8 +86,11 @@
     &__title {
       font-weight: normal;
       line-height: 1;
-      margin: 0 30px;
+      margin-left: 30px;
       color: $w1;
+      @include d(fh) {
+        margin-left: 60px;
+      }
       &-emphasis {
         display: inline-block;
         flex: 1;
@@ -91,8 +98,11 @@
         font-weight: bold;
         width: 100%;
         color: $w1;
+        @include d(s) {
+          font-size: 5rem;
+        }
         @include d(t) {
-          font-size: 4.25rem;
+          font-size: 4rem;
         }
         @include d(m) {
           font-size: 3rem;
@@ -104,6 +114,9 @@
       max-width: 60ch;
       margin: 30px 30px 12px;
       color: $w3;
+      @include d(fh) {
+        margin-left: 60px;
+      }
     }
   }
   .c-button {
@@ -133,6 +146,9 @@
     &:active {
       transform: translateY(2px);
     }
+    @include d(fh) {
+      margin-left: 60px;
+    }
   }
   .c-menu {
     align-items: flex-end;
@@ -145,6 +161,9 @@
     right: 0;
     padding: 0 30px 30px 0;
     position: absolute;
+    @include d(fh) {
+      padding: 0 60px 50px 0;
+    }
     &__item {
       margin-left: 15px;
       z-index: 3;
