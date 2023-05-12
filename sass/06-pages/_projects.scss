@@ -82,7 +82,7 @@
       &__link {
         display: flex;
         font: 700 1rem/1 "Roboto", Helvetica, Arial, sans-serif;
-        color: $b1;
+        color: $white;
         letter-spacing: 0.1rem;
         text-transform: uppercase;
         padding: 16px 24px;
@@ -93,7 +93,6 @@
         &:hover {
           animation: heartbeat 1.5s ease-in-out both;
           background: $s4;
-          color: $w2;
         }
       }
     }

@@ -964,7 +964,7 @@ strong {
 .c-projects__info .c-buttons__link {
   display: flex;
   font: 700 1rem/1 "Roboto", Helvetica, Arial, sans-serif;
-  color: var(--b1);
+  color: var(--white);
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   padding: 16px 24px;
@@ -976,7 +976,6 @@ strong {
 .c-projects__info .c-buttons__link:hover {
   animation: heartbeat 1.5s ease-in-out both;
   background: var(--s4);
-  color: var(--w2);
 }
 @media (max-width: 1200px) {
   .c-projects__info {
