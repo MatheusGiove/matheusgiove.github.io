@@ -1,5 +1,5 @@
-@use "../variables/index" as *;
-@use "../utilities/index" as *;
+@use "../01-variables/index" as *;
+@use "../02-functions/index" as *;
 
 .c-skills {
   font: 600 1rem/1 "Roboto", Helvetica, Arial, sans-serif;
@@ -8,16 +8,16 @@
   //overflow-x: hidden;
   padding: 60px calc((100% - 1440px) / 2);
   &::after {
-    @include bg-1-r;
+    @include background-r;
   }
   &::before {
-    @include bg-1-l;
+    @include background-l;
   }
   &__title {
     display: flex;
     justify-content: center;
     font: 700 2rem/1.33 "Roboto", Helvetica, Arial, sans-serif;
-    color: $primary-3;
+    color: $p3;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     margin-bottom: 44px;
@@ -27,7 +27,7 @@
       width: 50px;
       height: 5px;
       bottom: -20px;
-      background: $primary-3;
+      background: $p3;
       position: absolute;
     }
     &::before {
@@ -35,7 +35,7 @@
       width: 150px;
       height: 1px;
       bottom: -18px;
-      background: var(--b2);
+      background: $b2;
       position: absolute;
     }
   }
@@ -46,7 +46,7 @@
     gap: 8px;
     padding: 0 20px;
     margin-bottom: 20px;
-    @include d(s) {
+    @include responsive(desktop) {
       display: none;
     }
   }
@@ -57,7 +57,7 @@
     height: 100%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: $secundary-5;
+    background: $s5;
     transition: transform 0.4s ease-in-out;
   }
   &__switcher {
@@ -71,7 +71,7 @@
     background: $b3;
     transition: background 0.4s ease-in-out;
     &--active {
-      background: $primary-5;
+      background: $p5;
       .c-skills__button {
         transform: translateX(30px);
       }
@@ -100,7 +100,7 @@
     height: 200px;
     padding: 30px;
     box-shadow: 5px 10px 20px rgba(#000000, 0.1);
-    background: var(--w2);
+    background: $w2;
     border-radius: 10px;
     transform-style: preserve-3d;
     transform: perspective(1000px);
@@ -121,7 +121,7 @@
       opacity: 1;
       transform: none;
     }
-    @include d(s) {
+    @include responsive(desktop) {
       opacity: 1;
       transform: none;
     }

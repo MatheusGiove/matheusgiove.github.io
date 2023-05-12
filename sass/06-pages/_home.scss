@@ -1,5 +1,5 @@
-@use "../variables/index" as *;
-@use "../utilities/index" as *;
+@use "../01-variables/index" as *;
+@use "../02-functions/index" as *;
 
 #header {
   display: flex;
@@ -9,11 +9,11 @@
   padding: 12px 20px;
   position: fixed;
   width: calc(100% - 40px);
-  background: var(--w1);
+  background: $w1;
   box-shadow: 0 2px 10px rgba(#000, 0.05);
   z-index: 999;
   overflow-x: hidden;
-  @include d(s) {
+  @include responsive(desktop) {
     width: calc(100% - 32px);
   }
   .c-brand {
@@ -24,7 +24,7 @@
     align-items: center;
     justify-items: center;
     &.is-active > .c-list-menu {
-      @include d(s) {
+      @include responsive(desktop) {
         visibility: visible;
         width: 260px;
         left: 0px;
@@ -32,9 +32,9 @@
     }
     &__button {
       display: none;
-      @include d(s) {
+      @include responsive(desktop) {
         display: block;
-        background: $primary-5;
+        background: $p3;
         padding: 10px;
         border-radius: 50%;
         border: none;
@@ -53,13 +53,14 @@
     .c-list-menu {
       display: flex;
       flex-wrap: wrap;
+      padding: 0 20px;
       gap: 20px;
-      @include d(s) {
+      @include responsive(desktop) {
         position: fixed;
         display: grid;
         align-content: center;
         visibility: hidden;
-        background: var(--w2);
+        background: $p2;
         width: 0;
         height: 100vh;
         top: 0;
@@ -81,12 +82,12 @@
         display: block;
         width: 0%;
         height: 2px;
-        background: linear-gradient(135deg, $primary-4, $primary-3);
+        background: linear-gradient(135deg, $p4, $p3);
         position: absolute;
       }
       &:hover {
         transition: 0.3s;
-        background-image: linear-gradient(135deg, $primary-4, $primary-3);
+        background-image: linear-gradient(135deg, $p4, $p3);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -95,22 +96,24 @@
           width: 100%;
         }
       }
-      @include d(s) {
+      @include responsive(desktop) {
         display: flex;
         justify-content: center;
         padding: 20px;
         border-radius: 20px;
-        background: var(--w1);
+        background: $w1;
+        color: $b1;
+        transition: all .4s ease-in-out;
         &:hover {
-          color: var(--w1);
-          background: linear-gradient(135deg, $primary-4, $primary-3);
-          transform: scale(1.4);
+          color: $white;
+          background: $s5;
+          transform: scale(1.05);
         }
         &::after {
           display: none;
         }
       }
-      @include d(fh) {
+      @include responsive(desktop-fh) {
         font-size: 1.125rem;
       }
     }
@@ -137,10 +140,11 @@
           100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em))
         );
         background: #303136;
-        box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+        box-shadow: inset -3px -2px 5px -2px #8983f7,
+          inset -10px -4px 0 0 #a3dafb;
       }
     }
-    @include d(s) {
+    @include responsive(desktop) {
       margin-right: 60px;
     }
     .c-slider {
@@ -150,7 +154,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: $primary-5;
+      background-color: $p5;
       transition: 0.4s;
       border-radius: 30px;
       &:before {
@@ -172,46 +176,45 @@
   display: grid;
   align-content: center;
   text-align: center;
-  color: var(--b1);
+  color: $b1;
   height: 100vh;
   position: relative;
-  //overflow-x: hidden;
   &::after {
-    @include bg-1-r;
+    @include background-r;
   }
   &::before {
-    @include bg-1-l;
+    @include background-l;
   }
   &__title {
     font: 700 4rem / 1.12 "Fira Code", Roboto, Helvetica, sans-serif;
     text-decoration: none;
-    @include d(s) {
+    @include responsive(desktop) {
       font-size: 3rem;
     }
-    @include d(t) {
+    @include responsive(tablet) {
       font-size: 2rem;
     }
-    @include d(m) {
+    @include responsive(mobile) {
       font-size: 1.5rem;
-    };
+    }
   }
   &__subtitle {
     font: 400 1.75rem / 1.33 Roboto, Helvetica, Arial, sans-serif;
     text-decoration: none;
     & > span {
-      background-image: linear-gradient(135deg, $primary-4, $primary-2);
+      background-image: linear-gradient(135deg, $p4, $p2);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-    }  
-    @include d(s) {
+    }
+    @include responsive(desktop) {
       font-size: 1.5rem;
     }
-    @include d(t) {
+    @include responsive(tablet) {
       font-size: 1.25rem;
     }
-    @include d(m) {
+    @include responsive(mobile) {
       font-size: 1rem;
-    };
+    }
   }
 }

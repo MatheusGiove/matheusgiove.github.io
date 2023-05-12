@@ -1,0 +1,38 @@
+@use "../02-functions/index" as *;
+
+img,
+iframe,
+object,
+embed,
+video {
+  max-width: 100%;
+}
+
+img[width][height],
+iframe[width][height],
+object[width][height],
+embed[width][height],
+video[width][height] {
+  height: auto;
+}
+
+img {
+  border-style: none
+}
+
+img[src$=".jpeg"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: $w1;
+}
+::-webkit-scrollbar-thumb {
+  background: $p3;
+}

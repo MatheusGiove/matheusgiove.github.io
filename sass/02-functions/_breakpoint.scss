@@ -1,0 +1,19 @@
+@mixin responsive($display) {
+  @if $display == desktop-fh {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  } @else if $display == desktop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $display == tablet {
+    @media (max-width: 760px) {
+      @content;
+    }
+  } @else if $display == mobile {
+    @media (max-width: 440px) {
+      @content;
+    }
+  }
+}

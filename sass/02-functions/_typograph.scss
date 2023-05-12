@@ -1,0 +1,7 @@
+@use "../01-variables/index" as *;
+
+@function font($s, $w: normal, $f: 1) {
+  $font-weight: map-get($weight-map, $w);
+  $font-family: map-get($family-map, $f);
+  @return #{$font-weight} #{font-size($s)} #{$font-family};
+}

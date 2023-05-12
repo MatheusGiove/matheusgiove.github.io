@@ -27,8 +27,8 @@ const darkModeButton = document.querySelector("#u-appearenceButton");
 function changeMode() {
   const logo = document.querySelector(".c-brand > img");
   const mode = document.querySelector("html");
-  mode.classList.toggle("dark-mode");
-  if (mode.classList.contains("dark-mode")) {
+  mode.classList.toggle("dark-theme");
+  if (mode.classList.contains("dark-theme")) {
     logo.setAttribute("src", "./svg/logos/logo-dm.svg");
   } else {
     logo.setAttribute("src", "./svg/logos/logo.svg");

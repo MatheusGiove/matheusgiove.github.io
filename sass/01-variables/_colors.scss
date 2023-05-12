@@ -1,0 +1,38 @@
+:root {
+  --p1: #0033aa;
+  --p2: #0055cc;
+  --p3: #0077ff;
+  --p4: #1199ff;
+  --p5: #22bbff;
+  --s1: #cc1100;
+  --s2: #ee3300;
+  --s3: #ff4411;
+  --s4: #ff7722;
+  --s5: #ff8822;
+  --w1: #edf1f7;
+  --w2: #e1e1e1;
+  --w3: #bbccdd;
+  --b1: #111122;
+  --b2: #222233;
+  --b3: #334455;
+  --strong: #1199ff;
+  --project: #bbccdd;
+  --project-info: #9393a6;
+  --white: #edf1f7;
+  --black: #111122;
+  --gray: #222233;
+  --light-gray: #334455;
+}
+
+.dark-theme:root {
+  --w1: #111122;
+  --w2: #222233;
+  --w3: #334455;
+  --b1: #edf1f7;
+  --b2: #e1e1e1;
+  --b3: #bbccdd;
+  --strong: #ff8822;
+  --project: #222233;
+  --project-info: #5a6169;
+}
+

@@ -1,10 +1,10 @@
-@use "../variables/index" as *;
-@use "../utilities/index" as *;
+@use "../01-variables/index" as *;
+@use "../02-functions/index" as *;
 
 #profile {
   padding: 60px calc((100% - 1440px) / 2);
   .c-resume {
-    padding: 0 20px; 
+    padding: 0 20px;
     &__description {
       font: 400 1.25rem/1.5 "Roboto", Helvetica, Arial, sans-serif;
       max-width: 110ch;
@@ -17,7 +17,7 @@
         height: 5px;
         bottom: -20px;
         right: calc(50% - 25px);
-        background: $primary-3;
+        background: $p3;
         position: absolute;
       }
       &::before {
@@ -26,7 +26,7 @@
         height: 1px;
         bottom: -18px;
         right: calc(50% - 75px);
-        background: var(--b2);
+        background: $b2;
         position: absolute;
       }
     }
@@ -43,7 +43,7 @@
       & > img {
         clip-path: circle();
       }
-      @include d(s) {
+      @include responsive(desktop) {
         display: block;
         place-self: center;
         margin: 20px 0 30px;
@@ -54,7 +54,7 @@
         font-size: 1.5rem;
         letter-spacing: 0.05rem;
         text-transform: uppercase;
-        color: rgba($primary-3, 1);
+        color: $p3;
       }
       &__description {
         font-size: 1.125rem;
@@ -71,7 +71,7 @@
         gap: 12px 20px;
         margin-bottom: 24px;
         font-weight: 500;
-        @include d(t) {
+        @include responsive(tablet) {
           grid-template-columns: 1fr;
         }
       }
@@ -83,14 +83,14 @@
           font: 700 1rem/1 Roboto, Helvetica, sans-serif;
           text-transform: uppercase;
           letter-spacing: 0.05rem;
-          color: $primary-4;
+          color: $p4;
         }
         &::before {
           content: "";
           width: 10px;
           height: 10px;
           border-radius: 50%;
-          background: $primary-4;
+          background: $p4;
         }
       }
     }
@@ -99,20 +99,18 @@
         font: 700 1.125rem/1 Roboto, Helvetica, sans-serif;
         text-transform: uppercase;
         letter-spacing: 0.05rem;
-        color: var(--b1);
+        color: $b1;
       }
       &__description {
+        color: $b2;
         font-size: 1.125rem;
         line-height: 1.33;
         max-width: 80ch;
         margin-top: 8px;
       }
     }
-    @include d(s) {
+    @include responsive(desktop) {
       flex-direction: column;
     }
-  }
-  strong {
-    color: var(--primary-5);
   }
 }

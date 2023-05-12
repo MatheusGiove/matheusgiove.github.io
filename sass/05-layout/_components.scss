@@ -1,10 +1,14 @@
-@use "../variables/colors" as *;
+// Components
+// Aqui já começamos a criar nossos componentes de maneira mais específica. Aqui ainda é restrito para apenas o uso de classes.
+
+@use "../01-variables/index" as *;
+@use "../02-functions/index" as *;
 
 .c-title {
   display: flex;
   justify-content: center;
   font: 700 2rem/1.33 "Roboto", Helvetica, Arial, sans-serif;
-  color: $primary-3;
+  color: $p3;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   margin-bottom: 44px;
@@ -14,7 +18,7 @@
     width: 50px;
     height: 5px;
     bottom: -20px;
-    background: $primary-3;
+    background: $p3;
     position: absolute;
   }
   &::before {
@@ -22,7 +26,7 @@
     width: 150px;
     height: 1px;
     bottom: -18px;
-    background: var(--b2);
+    background: $b2;
     position: absolute;
   }
 }

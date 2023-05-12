@@ -1,0 +1,16 @@
+@use "../01-variables/index" as *;
+@use "../02-functions/index" as *;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: $b1;
+}
+body {
+  margin: 0;
+  background: $w1;
+}
+[hidden] {
+  display: none;
+}

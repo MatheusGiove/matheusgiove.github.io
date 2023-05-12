@@ -1,0 +1,9 @@
+// Elements
+// Nessa camada vamos definir seletores básicos, é a última camada que irá usar seletores por tags. Atenção, nessa camada, nada de usar seletores por id ou classes, apenas seletores por tag (elementos).
+
+@use "../01-variables/index" as *;
+@use "../02-functions/index" as *;
+
+strong {
+  color: $strong;
+}
