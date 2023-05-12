@@ -9,28 +9,28 @@
 </g>
 <defs>
 <linearGradient id="paint0_linear_35_214" x1="17.1429" y1="10.1658" x2="17.1429" y2="23.1429" gradientUnits="userSpaceOnUse">
-<stop stop-color="#2F37FF"/>
-<stop offset="1" stop-color="#0909EA"/>
+<stop stop-color="#05c"/>
+<stop offset="1" stop-color="#07f"/>
 </linearGradient>
 <linearGradient id="paint1_linear_35_214" x1="17.1429" y1="17.5029" x2="17.1429" y2="18.5029" gradientUnits="userSpaceOnUse">
-<stop stop-color="#2F37FF"/>
-<stop offset="1" stop-color="#0909EA"/>
+<stop stop-color="#05c"/>
+<stop offset="1" stop-color="#07f"/>
 </linearGradient>
 <linearGradient id="paint2_linear_35_214" x1="8.57143" y1="4.28577" x2="8.57143" y2="5.28577" gradientUnits="userSpaceOnUse">
-<stop stop-color="#2F37FF"/>
-<stop offset="1" stop-color="#0909EA"/>
+<stop stop-color="#05c"/>
+<stop offset="1" stop-color="#07f"/>
 </linearGradient>
 <linearGradient id="paint3_linear_35_214" x1="9.07144" y1="0.857178" x2="9.07144" y2="4.28575" gradientUnits="userSpaceOnUse">
-<stop stop-color="#2F37FF"/>
-<stop offset="1" stop-color="#0909EA"/>
+<stop stop-color="#05c"/>
+<stop offset="1" stop-color="#07f"/>
 </linearGradient>
 <linearGradient id="paint4_linear_35_214" x1="8.57145" y1="4.28577" x2="8.57145" y2="16.2858" gradientUnits="userSpaceOnUse">
-<stop stop-color="#2F37FF"/>
-<stop offset="1" stop-color="#0909EA"/>
+<stop stop-color="#05c"/>
+<stop offset="1" stop-color="#07f"/>
 </linearGradient>
 <linearGradient id="paint5_linear_35_214" x1="6.80573" y1="4.28577" x2="6.80573" y2="12.1715" gradientUnits="userSpaceOnUse">
-<stop stop-color="#2F37FF"/>
-<stop offset="1" stop-color="#0909EA"/>
+<stop stop-color="#05c"/>
+<stop offset="1" stop-color="#07f"/>
 </linearGradient>
 <clipPath id="clip0_35_214">
 <rect width="24" height="24" fill="white"/>
