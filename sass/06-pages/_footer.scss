@@ -3,10 +3,11 @@
 
 .c-footer {
   &__text {
-    font: 400 0.9rem/1.12 "Roboto", Helvetica, Arial, sans-serif;
+    font: font(14, 1);
+    line-height: 1.12;
     display: flex;
     justify-content: center;
-    padding: 12px 20px;
+    padding: 8px 20px;
     text-align: center;
     background-color: $p3;
     color: $white;

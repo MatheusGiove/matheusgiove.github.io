@@ -1,7 +1,7 @@
 @use "../01-variables/index" as *;
 @use "../02-functions/index" as *;
 
-#header {
+.c-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,7 +71,7 @@
       }
     }
     .c-link > a {
-      font: 500 1rem/1 Roboto, Helvetica, sans-serif;
+      font: font(16, 2);
       text-transform: uppercase;
       letter-spacing: 0.05rem;
       padding: 6px 0;
@@ -186,7 +186,8 @@
     @include background-l;
   }
   &__title {
-    font: 700 4rem / 1.12 "Fira Code", Roboto, Helvetica, sans-serif;
+    font: font(64, 4, 2);
+    line-height: 1.12;
     text-decoration: none;
     @include responsive(desktop) {
       font-size: 3rem;
@@ -199,7 +200,8 @@
     }
   }
   &__subtitle {
-    font: 400 1.75rem / 1.33 Roboto, Helvetica, Arial, sans-serif;
+    font: font(28);
+    line-height: 1.33;
     text-decoration: none;
     & > span {
       background-image: linear-gradient(135deg, $p4, $p2);

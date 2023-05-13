@@ -1,12 +1,13 @@
 @use "../01-variables/index" as *;
 @use "../02-functions/index" as *;
 
-#profile {
+.c-profile {
   padding: 60px calc((100% - 1440px) / 2);
   .c-resume {
     padding: 0 20px;
     &__description {
-      font: 400 1.25rem/1.5 "Roboto", Helvetica, Arial, sans-serif;
+      font: font(20);
+      line-height: 1.5;
       max-width: 110ch;
       margin: 40px auto;
       text-align: center;
@@ -80,9 +81,9 @@
         align-items: center;
         gap: 4px;
         & > span {
-          font: 700 1rem/1 Roboto, Helvetica, sans-serif;
-          text-transform: uppercase;
+          font: font(16, 4);
           letter-spacing: 0.05rem;
+          text-transform: uppercase;
           color: $p4;
         }
         &::before {
@@ -96,7 +97,7 @@
     }
     .c-more {
       &__title {
-        font: 700 1.125rem/1 Roboto, Helvetica, sans-serif;
+        font: font(18, 4);
         text-transform: uppercase;
         letter-spacing: 0.05rem;
         color: $b1;

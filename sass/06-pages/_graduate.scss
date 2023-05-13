@@ -92,20 +92,21 @@
       & > p {
         display: grid;
         gap: 6px;
-        font: 500 1.25rem/1 "Roboto", Helvetica, Arial, sans-serif;
+        font: font(18, 2);
         text-transform: uppercase;
-        letter-spacing: 0.1rem;
+        letter-spacing: .05rem;
         color: $white;
         margin-bottom: 24px;
         & > span {
-          font-size: 1rem;
+          font-size: .875rem;
           text-transform: lowercase;
           color: $light-gray;
         }
       }
       & > h3 {
         flex: 1;
-        font: 700 1.8rem/1.2 "Roboto", Helvetica, Arial, sans-serif;
+        font: font(28, 4);
+        line-height: 1.33;
         color: $gray;
         margin-bottom: 40px;
       }
@@ -117,7 +118,7 @@
     }
   }
   &__subtitles {
-    font: 700 1.25rem/1 "Roboto", Helvetica, Arial, sans-serif;
+    font: font(20, 4);
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     color: $p3;

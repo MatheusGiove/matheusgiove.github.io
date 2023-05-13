@@ -7,7 +7,8 @@
 .c-title {
   display: flex;
   justify-content: center;
-  font: 700 2rem/1.33 "Roboto", Helvetica, Arial, sans-serif;
+  font: font(32, 4);
+  line-height: 1.33;
   color: $p3;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
@@ -31,6 +32,6 @@
   }
 }
 
-#contact .c-title{
+.c-contact .c-title{
   margin-bottom: 0 !important;
 }
