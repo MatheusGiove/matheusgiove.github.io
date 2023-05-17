@@ -8,7 +8,7 @@ $weight-map: (
 );
 
 @function font-size($size) {
-  @return ($size / 16) * 1rem;
+  @return calc($size / 16) * 1rem;
 }
 
 //Familia tipográfica
