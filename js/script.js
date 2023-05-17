@@ -100,8 +100,6 @@ function sectionAnimator() {
         const visible = distance - viewHeight < 0;
         if (visible) {
           item.classList.add("is-active");
-        } else {
-          item.classList.remove("is-active");
         }
       });
     }
