@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.min.css" type="text/css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
   <link rel="shortcut icon" href="./svg/logos/favicon.svg" type="image/x-icon">
   <title>Matheus Giove</title>
 </head>
@@ -13,9 +13,9 @@
 <body>
   <!-- ====== Menu ====== -->
   <header id="header" class="c-header">
-    <a class="c-brand" href="./index.html"><img src="./svg/logos/logo-dm.svg" width="100" alt="site-logo"></a>
+    <a class="c-brand" href="#home"><img src="./svg/logos/logo-dm.svg" width="100" alt="site-logo"></a>
     <nav class="c-menu">
-      <ul class="c-list-menu">
+      <ul class="c-list-menu js-listMenu">
         <li class="c-link"><a href="#home">Home</a></li>
         <li class="c-link"><a href="#profile">Perfil</a></li>
         <li class="c-link"><a href="#graduate">Graduação</a></li>
@@ -42,7 +42,7 @@
   </section>
   <main id="main">
     <!-- ====== Perfil ====== -->
-    <article id="profile" class="c-profile">
+    <article id="profile" class="c-profile js-sectionAnime">
       <section class="c-profile__content">
         <div class="c-resume">
           <h2 class="c-title">Sobre</h2>
@@ -50,7 +50,8 @@
                 Tecnologia</strong></em> na <em><strong>Universidade Federal do ABC</strong></em> e complementando minha
             formação com cursos online de desenvolvimento web. Meus principais conhecimentos são em
             <em><strong>HTML,</strong></em> <em><strong>CSS</strong></em> e <em><strong>JavaScript.</strong></em> Também
-            possuo conhecimento em <em><strong>UI Design.</strong></em></p>
+            possuo conhecimento em <em><strong>UI Design.</strong></em>
+          </p>
         </div>
         <div class="c-about">
           <picture class="c-image">
@@ -88,14 +89,15 @@
                 permitiu viajar para diversos campeonatos, auxiliando o colégio a conquistar diversos títulos. Além
                 disso, toco <em><strong>violino</strong></em> desde de os 10 anos e a combinação dessas duas atividades
                 contribuiu significativamente para o meu <em><strong>desenvolvimento intelectual</strong></em>, e
-                <em><strong>aprimoramento do raciocínio lógico</strong></em></p>
+                <em><strong>aprimoramento do raciocínio lógico</strong></em>
+              </p>
             </div>
           </div>
         </div>
       </section>
     </article>
     <!-- ====== Graduação ====== -->
-    <section id="graduate" class="c-graduate">
+    <section id="graduate" class="c-graduate js-sectionAnime">
       <div class="c-graduate__content">
         <h2 class="c-graduate__title">formação</h2>
         <div class="c-graduate__formation">
@@ -107,17 +109,21 @@
             </li>
           </ul>
         </div>
-        <div class="c-graduate__course">
+        <div class="c-graduate__course js-sectionAnime">
           <h3 class="c-graduate__subtitles"><span><img src="./svg/graduate/course-icon.svg" alt="course-icon"
                 width="32px" height="32px"></span>cursos</h3>
           <ul class="c-graduate__infos">
-            <li class="c-graduate__course__items"><a href="https://drive.google.com/drive/folders/14iGa9z1ZbOmmbnrDzz7al4mE1B-nmt_a?usp=sharing" target="_blank">Origamid - <em><small>Certificados</small></em></a><span>148h</span>
+            <li class="c-graduate__course__items"><a
+                href="https://drive.google.com/drive/folders/14iGa9z1ZbOmmbnrDzz7al4mE1B-nmt_a?usp=sharing"
+                target="_blank">Origamid - <em><small>Certificados</small></em></a><span>148h</span>
             </li>
-            <li class="c-graduate__course__items"><a href="https://drive.google.com/drive/folders/1G19Xinbj09gcEA4wr94qWzEsMoMhSRp7?usp=sharing" target="_blank">OneBitCode - <em><small>Certificados</small></em></a><span>12h</span>
+            <li class="c-graduate__course__items"><a
+                href="https://drive.google.com/drive/folders/1G19Xinbj09gcEA4wr94qWzEsMoMhSRp7?usp=sharing"
+                target="_blank">OneBitCode - <em><small>Certificados</small></em></a><span>12h</span>
             </li>
           </ul>
         </div>
-        <div class="c-graduate__language">
+        <div class="c-graduate__language js-sectionAnime">
           <h3 class="c-graduate__subtitles"><span><img src="./svg/graduate/language-icon.svg" alt="language-icon"
                 width="32px" height="32px"></span>idiomas</h3>
           <ul class="c-graduate__infos">
@@ -131,7 +137,7 @@
             </li>
           </ul>
         </div>
-        <div class="c-graduate__competence">
+        <div class="c-graduate__competence js-sectionAnime">
           <h3 class="c-graduate__subtitles"><span><img src="./svg/graduate/competence-icon.svg" alt="competence-icon"
                 width="32px" height="32px"></span>competências</h3>
           <ul class="c-graduate__infos graduate">
@@ -145,8 +151,8 @@
     </section>
     <!-- ====== Skills ====== -->
     <section id="skills" class="c-skills">
-      <h2 class="c-title">habilidades</h2>
-      <div class="c-skills__checkbox">
+      <h2 class="c-title js-sectionAnime">habilidades</h2>
+      <div class="c-skills__checkbox js-sectionAnime">
         <label class="c-skills__label" for="c-skills__checkbox">MOSTRAR TUDO</label>
         <label>
           <span class="c-skills__switcher c-skills__switcher--active">
@@ -155,7 +161,7 @@
           <input type="checkbox" id="c-skills__checkbox" hidden>
         </label>
       </div>
-      <ul class="c-skills__container">
+      <ul class="c-skills__container js-sectionAnime">
         <li class="c-skills__card">
           <div class="c-skills__content c-skills__content--active">
             <img src="svg/skills/html-icon.svg" width="96" height="96" alt="html-Icon">
@@ -195,9 +201,9 @@
       </ul>
     </section>
     <!-- ====== Projetos ====== -->
-    <section id="projects" class="c-projects">
+    <section id="projects" class="c-projects js-sectionAnime">
       <h2 class="c-title">projetos</h2>
-      <div class="c-projects__content">
+      <div class="c-projects__content js-sectionAnime">
         <div class="u-projects-bg">
           <div class="c-projects__info">
             <h3 class="c-projects__title">Lutearia</h3>
@@ -222,11 +228,11 @@
             </div>
           </div>
         </div>
-        <div class="c-projects__image">
+        <div class="c-projects__image js-sectionAnime">
           <img src="./img/projects/lutearia.jpeg" alt="lutearia project">
         </div>
       </div>
-      <div class="c-projects__content">
+      <div class="c-projects__content js-sectionAnime">
         <div class="u-projects-bg">
           <div class="c-projects__info">
             <h3 class="c-projects__title">Flex Blog</h3>
@@ -249,11 +255,11 @@
             </div>
           </div>
         </div>
-        <div class="c-projects__image">
+        <div class="c-projects__image js-sectionAnime">
           <img src="./img/projects/flex-blog.jpeg" alt="flex-blog project">
         </div>
       </div>
-      <div class="c-projects__content">
+      <div class="c-projects__content js-sectionAnime">
         <div class="u-projects-bg">
           <div class="c-projects__info">
             <h3 class="c-projects__title">Caravan</h3>
@@ -281,11 +287,11 @@
             </div>
           </div>
         </div>
-        <div class="c-projects__image">
+        <div class="c-projects__image js-sectionAnime">
           <img src="./img/projects/caravan.jpeg" alt="caravan project">
         </div>
       </div>
-      <div class="c-projects__content">
+      <div class="c-projects__content js-sectionAnime">
         <div class="u-projects-bg">
           <div class="c-projects__info">
             <h3 class="c-projects__title">Animais Fantásticos</h3>
@@ -311,13 +317,13 @@
             </div>
           </div>
         </div>
-        <div class="c-projects__image">
+        <div class="c-projects__image js-sectionAnime">
           <img src="./img/projects/animais-fantasticos.jpeg" alt="animais-fantásticos project">
         </div>
       </div>
     </section>
     <!-- ====== Contato ====== -->
-    <article id="contact" class="c-contact">
+    <article id="contact" class="c-contact js-sectionAnime">
       <h2 class="c-title">contato</h2>
       <section class="c-contact-card">
         <section class="c-content">

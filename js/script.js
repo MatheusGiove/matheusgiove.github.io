@@ -65,17 +65,14 @@ const cards = document.querySelectorAll(".js-contactCard");
 const contactMenu = document.querySelector(".js-contactMenu");
 const contactMenuToggle = "js-contactMenuToggle";
 const contactToggle = document.querySelectorAll(`.${contactMenuToggle}`);
-
 contactMenu.addEventListener("click", (event) => {
   if (event.target.classList.contains(contactMenuToggle)) {
     activateCard(event.target.parentElement);
     markAsActiveMenuItem(event.target);
   }
 });
-
 function activateCard(elemento) {
   const socialContact = elemento.dataset.socialContact;
-
   cards.forEach((card) => {
     card.classList.remove("is-active");
 
@@ -84,7 +81,6 @@ function activateCard(elemento) {
     }
   });
 }
-
 function markAsActiveMenuItem(el) {
   contactToggle.forEach((item) => {
     item.classList.remove("is-active");
@@ -92,3 +88,44 @@ function markAsActiveMenuItem(el) {
 
   el.classList.add("is-active");
 }
+
+// <--===== Section Animation =====-->
+function sectionAnimator() {
+  const section = document.querySelectorAll(".js-sectionAnime");
+  if (section.length) {
+    function sectionAnimation() {
+      const viewHeight = window.innerHeight * 0.75;
+      section.forEach((item) => {
+        const distance = item.getBoundingClientRect().top;
+        const visible = distance - viewHeight < 0;
+        if (visible) {
+          item.classList.add("is-active");
+        } else {
+          item.classList.remove("is-active");
+        }
+      });
+    }
+    sectionAnimation();
+    window.addEventListener("scroll", sectionAnimation);
+  }
+}
+sectionAnimator();
+
+function SmoothScroll() {
+  const menuLink = document.querySelectorAll(".js-listMenu > li > a");
+  if (menuLink.length) {
+    function smoothScroll(event) {
+      event.preventDefault();
+      const hrefLink = this.getAttribute("href");
+      const section = document.querySelector(hrefLink);
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+    menuLink.forEach((item) => {
+      item.addEventListener("click", smoothScroll);
+    });
+  }
+}
+SmoothScroll();

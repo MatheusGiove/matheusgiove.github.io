@@ -2,7 +2,7 @@
 @use "../02-functions/index" as *;
 
 .c-profile {
-  padding: 60px calc((100% - 1440px) / 2);
+  padding: 70px calc((100% - 1440px) / 2);
   .c-resume {
     padding: 0 20px;
     &__description {

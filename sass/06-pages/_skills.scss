@@ -5,7 +5,7 @@
   font: font(16, 2);
   letter-spacing: 0.08rem;
   position: relative;
-  padding: 60px calc((100% - 1440px) / 2);
+  padding: 70px calc((100% - 1440px) / 2);
   &::after {
     @include background-r;
   }

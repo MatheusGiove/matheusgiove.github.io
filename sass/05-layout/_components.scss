@@ -32,6 +32,16 @@
   }
 }
 
-.c-contact .c-title{
+.c-contact .c-title {
   margin-bottom: 0 !important;
+}
+
+.js-sectionAnime {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: 0.5s ease-in-out;
+  &.is-active {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
