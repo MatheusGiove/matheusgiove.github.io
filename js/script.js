@@ -1,12 +1,21 @@
 // <--===== Menu-Mobile =====-->
 const menuButton = document.querySelector(".c-menu__button");
 function toggleMenu() {
+  const menuLinks = document.querySelectorAll(".js-listMenu > li > a");
   const menuMobile = document.querySelector(".c-menu");
   menuMobile.classList.toggle("is-active");
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      menuMobile.classList.remove("is-active");
+    });
+  });
+  window.addEventListener("click", (event) => {
+    if (!menuMobile.contains(event.target)) {
+      menuMobile.classList.remove("is-active");
+    }
+  });
 }
-if (menuButton) {
-  menuButton.addEventListener("click", toggleMenu);
-}
+menuButton.addEventListener("click", toggleMenu);
 
 // <--===== Typed =====-->
 const typed = document.getElementById("typed");
