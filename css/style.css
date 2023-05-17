@@ -129,6 +129,16 @@ strong {
   margin-bottom: 0 !important;
 }
 
+.js-sectionAnime {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: 0.5s ease-in-out;
+}
+.js-sectionAnime.is-active {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
 .c-header {
   display: flex;
   align-items: center;
@@ -408,7 +418,7 @@ strong {
 }
 
 .c-profile {
-  padding: 60px calc((100% - 1440px) / 2);
+  padding: 70px calc((100% - 1440px) / 2);
 }
 .c-profile .c-resume {
   padding: 0 20px;
@@ -524,7 +534,7 @@ strong {
 
 .c-graduate {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  padding: 60px calc((100% - 1440px) / 2);
+  padding: 70px calc((100% - 1440px) / 2);
 }
 .c-graduate__content {
   display: grid;
@@ -726,7 +736,7 @@ strong {
   font: 500 1rem Roboto, Helvetica, Arial, sans-serif;
   letter-spacing: 0.08rem;
   position: relative;
-  padding: 60px calc((100% - 1440px) / 2);
+  padding: 70px calc((100% - 1440px) / 2);
 }
 .c-skills::after {
   position: absolute;
@@ -859,6 +869,9 @@ strong {
   }
 }
 
+.c-projects {
+  padding: 70px 0;
+}
 .c-projects .u-projects-bg {
   padding: 100px 10px 100px 40px;
   box-shadow: 200px 0 var(--project);
@@ -884,9 +897,6 @@ strong {
 }
 .c-projects__content + .c-projects__content {
   margin-top: 30px;
-}
-.c-projects__content:last-child {
-  margin-bottom: 60px;
 }
 .c-projects__content:nth-child(odd) .c-projects__image {
   display: flex;
@@ -1024,6 +1034,9 @@ strong {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+}
+.c-contact {
+  padding: 70px 0;
 }
 .c-contact-card {
   margin-bottom: 80px;
