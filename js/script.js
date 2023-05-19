@@ -48,11 +48,18 @@ if (darkModeButton) {
 }
 
 // <--===== Vanilla Tilt =====-->
-VanillaTilt.init(document.querySelectorAll(".c-skills__card"), {
-  reverse: true,
-  glare: true,
-  "max-glare": 0.2,
-  scale: 1.05,
+const skillCard = document.querySelectorAll(".c-skills__card");
+skillCard.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    if (window.matchMedia("(min-width: 1200px)").matches) {
+      VanillaTilt.init(document.querySelectorAll(".c-skills__card"), {
+        reverse: true,
+        glare: true,
+        "max-glare": 0.2,
+        scale: 1.05,
+      });
+    }
+  });
 });
 
 // <--===== Show Skills =====-->
