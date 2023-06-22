@@ -1036,10 +1036,9 @@ strong {
   }
 }
 .c-contact {
-  padding: 70px 0;
+  padding-top: 70px;
 }
 .c-contact-card {
-  margin-bottom: 80px;
   padding: 60px calc((100% - 1440px) / 2);
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   display: flex;

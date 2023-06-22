@@ -1,9 +1,8 @@
 @use "../01-variables/index" as *;
 @use "../02-functions/index" as *;
 .c-contact {
-  padding: 70px 0;
+  padding-top: 70px;
   &-card {
-  margin-bottom: 80px;
   padding: 60px calc((100% - 1440px) / 2);
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   display: flex;
