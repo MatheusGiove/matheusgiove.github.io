@@ -830,6 +830,22 @@ strong {
   padding: 0 20px;
   gap: 20px;
 }
+@media (max-width: 760px) {
+  .c-skills__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 440px) {
+  .c-skills__container {
+    gap: 10px;
+  }
+}
+@media (max-width: 440px) {
+  .c-skills__container img {
+    width: 3rem;
+  }
+}
 .c-skills__card {
   display: flex;
   align-items: center;
@@ -849,6 +865,11 @@ strong {
   transform: translateY(0px);
   transform: translateZ(50px);
   opacity: 1;
+}
+@media (max-width: 440px) {
+  .c-skills__card {
+    height: auto;
+  }
 }
 .c-skills__content {
   transform: translateY(100px);
