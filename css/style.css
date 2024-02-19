@@ -513,6 +513,17 @@ strong {
   border-radius: 50%;
   background: var(--p4);
 }
+.c-profile .c-about .c-info__item .curriculo {
+  background-color: var(--p3);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 0.25rem;
+  transition: all 0.5s ease;
+}
+.c-profile .c-about .c-info__item .curriculo:hover {
+  animation: heartbeat 1.5s ease-in-out both;
+  background-color: var(--strong);
+}
 .c-profile .c-about .c-more__title {
   font: 700 1.125rem Roboto, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -532,6 +543,34 @@ strong {
   }
 }
 
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
 .c-graduate {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   padding: 70px calc((100% - 1440px) / 2);

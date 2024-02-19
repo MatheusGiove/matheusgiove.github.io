@@ -93,6 +93,17 @@
           border-radius: 50%;
           background: $p4;
         }
+        & .curriculo {
+          background-color: $p3;
+          border-radius: .5rem;
+          padding: .5rem;
+          margin-left: .25rem;
+          transition: all .5s ease;
+          &:hover {
+            animation: heartbeat 1.5s ease-in-out both;
+            background-color: $strong;
+          }
+        }
       }
     }
     .c-more {
@@ -113,5 +124,34 @@
     @include responsive(desktop) {
       flex-direction: column;
     }
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
